@@ -9,7 +9,7 @@ export default function MessageBox() {
         {messageBoxState ? 
         <p>--placeholder--box--state</p> 
         : 
-        <p className='tempclass'>No hay chat seleccionado</p>}
+        <p>No hay chat seleccionado</p>}
     </div>
   )
 }

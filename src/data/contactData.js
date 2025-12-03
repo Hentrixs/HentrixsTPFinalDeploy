@@ -7,7 +7,8 @@ const contact_data = [
         contact_unseen_messages: 5,
         last_message_content: 'testing',
         last_message_state: 'RECEIVED',/*'NOT_SEND' | 'NOT_RECEIVED' | 'RECEIVED' | 'SEEN'*/
-        last_message_created_at: new Date()
+        last_message_created_at: new Date(),
+        contact_messages: ["buenos dias, como estas, estoy afuera"]
     },
     {
         contact_id: 2,
