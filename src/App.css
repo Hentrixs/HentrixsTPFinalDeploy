@@ -1,0 +1,36 @@
+* {
+    /*border: 0px !important;*/
+}
+
+body {
+    background-color: #171617;
+    height: 100%;
+}
+
+@media (min-width:441px) {
+    * {
+        /**/
+    }
+}
+
+@media (min-width:768px) {
+    .app-container {
+        display: flex;
+    }
+
+    .whatsapp-footer {
+        border: 0;
+        border-right: 1px solid #2F2E2F;
+    }
+
+    .contact-list-container {
+        border-top: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+
+header {
+    display: flex;
+    /*border: 1px solid #008000;*/
+    padding: 0rem 0.5rem;
+    justify-content: space-between;
+    align-content: center;
+    height: auto;
+    padding: 1rem;
+
+    span {
+        height: 2rem;
+        display: flex;
+    }
+
+    div {
+        display: flex;
+        border: 0px;
+        gap: 1rem;
+        align-self: center;
+
+        span {
+            display: flex;
+            padding: 0.5rem 0.5rem;
+            border-radius: 100px;
+        }
+
+        span:hover {
+            background-color: #2F2E2F;
+        }
+    }
+}

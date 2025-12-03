@@ -2,6 +2,7 @@
 Snippet para crear un componente de react
 RFC = React Functional Component
 */
+import './ContactSidebar.css';
 
 import React, { useEffect, useState } from 'react'
 import ContactSearchForm from '../ContactSearchForm/ContactSearchForm'
@@ -53,7 +54,7 @@ export default function ContactSidebar() {
         <aside>
             <div>
                 <ContactSearchForm/>
-                <a>Crear contacto</a>
+                {/*<a>Crear contacto</a>*/}
             </div>
             <ContactList contactState={contactState} loadingContactsState={loadingContactsState}/>
         </aside>

@@ -18,6 +18,24 @@ const contact_data = [
         last_message_state: 'SEEN',
         last_message_created_at: new Date()
     },
+    {
+        contact_id: 3,
+        contact_name: 'Jose',
+        contact_avatar: 'https://images.immediate.co.uk/production/volatile/sites/3/2017/12/yoda-the-empire-strikes-back-28a7558.jpg',
+        contact_unseen_messages: 0,
+        last_message_content: 'Que tal?',
+        last_message_state: 'SEEN',
+        last_message_created_at: new Date()
+    },
+    {
+        contact_id: 4,
+        contact_name: 'Martin',
+        contact_avatar: 'https://images.immediate.co.uk/production/volatile/sites/3/2017/12/yoda-the-empire-strikes-back-28a7558.jpg',
+        contact_unseen_messages: 0,
+        last_message_content: 'Nos vemos',
+        last_message_state: 'SEEN',
+        last_message_created_at: new Date()
+    },        
 ]
 
 export default contact_data
