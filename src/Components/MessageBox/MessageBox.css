@@ -1,0 +1,21 @@
+.messagebox-container {
+    border: 1px solid blue;
+    padding: 1rem;
+    width: 100rem;
+    display: flex;
+
+    /* esto es lo que estoy usando para hacer que la pagina ocupe
+    todo el height necesario, despues tengo que mejorar esto y hacerlo mejor*/
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem; 
+    }
+
+    p {
+        background-color: #252627;
+        padding: 9px 8px 7px 6px;
+        border-radius: 5px;
+    }
+}

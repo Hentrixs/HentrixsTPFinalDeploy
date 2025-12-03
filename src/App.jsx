@@ -24,7 +24,7 @@ function App (){
           </div>
           <div> {/* Aca tengo que ver como chota hacer para que esto se renderize
           Solamente por encima de los 768px (MessagesScreen)*/}
-            <MessagesScreen />
+            <MessageBox />
           </div>   
         </div>
       }/>

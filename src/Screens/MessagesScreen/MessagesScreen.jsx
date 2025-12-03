@@ -39,12 +39,10 @@ export default function MessagesScreen() {
             <h2>ID: {contactSelected.contact_id}</h2>
               {
               contactSelected.contact_messages ?
-              contactSelected.contact_messages.map((m,index) => { 
-                // Aca tengo que ver como sacar todos los elementos del array en <p>                
-                return(
-                  <p key={index}>{m}</p>
-                )
-              }) : <p>no hay mensajes aun</p>
+              contactSelected.contact_messages.map((m,index) => {
+                return(<p key={index}>{m}</p>)
+              })
+              : <p>no hay mensajes aun</p>
               }
             <MessageBox />
           </>
