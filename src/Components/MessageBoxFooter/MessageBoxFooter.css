@@ -1,0 +1,23 @@
+.messagebox-footer {
+
+    padding: 1rem;
+    bottom: 0px;
+    width: 100%;
+
+    form {
+        width: 100%;
+    }
+
+    input {
+        border-radius: 100px;
+        border: 1px solid var(--background-message);
+        padding: 1rem;
+        width: 100%;
+        background-color: var(--background-message);
+    }
+
+    input:hover {
+        outline: none;
+    }
+
+}

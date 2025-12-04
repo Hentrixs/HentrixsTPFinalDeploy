@@ -1,32 +1,35 @@
 
 header {
     display: flex;
-    /*border: 1px solid #008000;*/
-    padding: 0rem 0.5rem;
+    padding: 1.5rem 1rem;
     justify-content: space-between;
     align-content: center;
     height: auto;
-    padding: 1rem;
 
     span {
-        height: 2rem;
         display: flex;
+        height: 2rem;
     }
 
     div {
         display: flex;
         border: 0px;
         gap: 1rem;
+        padding: 0rem;
         align-self: center;
 
         span {
             display: flex;
             padding: 0.5rem 0.5rem;
-            border-radius: 100px;
+            border-radius: 200px;
+            justify-content: center;
+            align-items: center;
         }
 
         span:hover {
             background-color: #2F2E2F;
         }
+
     }
+
 }

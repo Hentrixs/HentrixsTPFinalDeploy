@@ -22,7 +22,7 @@ function App (){
               </div>
               <WhatsappFooter />
           </div>
-          <div> {/* Aca tengo que ver como chota hacer para que esto se renderize
+          <div className="messages-container"> {/* Aca tengo que ver como chota hacer para que esto se renderize
           Solamente por encima de los 768px (MessagesScreen)*/}
             <MessageBox />
           </div>   

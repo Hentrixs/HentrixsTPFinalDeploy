@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import MessageBox from '../../Components/MessageBox/MessageBox';
 import { useParams } from 'react-router';
 import { getContactById } from '../../services/contactService';
+import './MessagesScreen.css';
 
 
 export default function MessagesScreen() {
@@ -29,12 +30,12 @@ export default function MessagesScreen() {
   )
 
   return (
-    <div>
+    <div className='messages-screen'>
         {
           loadingcontact ? 
-          <div>cargando...</div>
+          <div className='loading-screen'>cargando...</div>
           :
-          <>
+          <div className='messages-screen'>
             <h1>Name: {contactSelected.contact_name}</h1>
             <h2>ID: {contactSelected.contact_id}</h2>
               {
@@ -44,8 +45,7 @@ export default function MessagesScreen() {
               })
               : <p>no hay mensajes aun</p>
               }
-            <MessageBox />
-          </>
+          </div>
         }
     </div>
   )
