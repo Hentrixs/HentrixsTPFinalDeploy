@@ -15,14 +15,26 @@ body {
     width: 100%;
 }
 
-@media (min-width:441px) {
-    * {
-        /**/
-    }
+@media (max-width:767px) {
+    .messages-container {
+        display: none;
+    }    
 }
 
 @media (min-width:768px) {
     
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        height: 100%;
+        width: 100%;
+        overflow: hidden; /* Evita scroll global */
+    }
+
     .app-container {
         display: flex;
         height: 100vh;
@@ -51,7 +63,4 @@ body {
         padding: 0.5rem;
     }
 
-    .messagebox-container {
-        height: 100vh;
-    }
 }

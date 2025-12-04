@@ -30,3 +30,5 @@ posiblemente como background
 13. Al contactlist y al messagebox meterle barra deslizante.
 
 14. Averiguar un poco sobre el funcionamiento del useParams()
+
+15. Arreglar el MessagesFooter

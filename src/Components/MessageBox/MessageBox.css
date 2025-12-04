@@ -9,7 +9,6 @@
 .messagebox-container2 {
     padding: 1rem;
     width: auto;
-    height: 100vh;
 
     /*esto es lo que estoy usando para hacer que la pagina ocupe
     todo el height necesario, despues tengo que mejorar esto y hacerlo mejor*/
