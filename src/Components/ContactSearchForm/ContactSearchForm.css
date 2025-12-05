@@ -26,6 +26,7 @@
 .contact-buttons {
     display: flex;
     gap: 1rem;
+    justify-content: center;
 
     button {
         border: 1px solid #2F2E2F;
