@@ -1,7 +1,6 @@
 .contact-search-form {
     display: flex;
     flex-direction: column;
-    /*border: 1px solid red;*/
     padding: 0rem 1rem;
 
     input {

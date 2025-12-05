@@ -1,23 +1,55 @@
 .messagebox-footer {
-
-    padding: 1rem;
-    bottom: 0px;
-    width: 100%;
-
+    background-color: aqua;
+    margin: 1rem;
+    border-radius: 100px;
+    padding: 0.5rem;
+    display: block;
+    background-color: var(--background-message);
+    
     form {
-        width: 100%;
-    }
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
 
-    input {
-        border-radius: 100px;
-        border: 1px solid var(--background-message);
-        padding: 1rem;
-        width: 100%;
-        background-color: var(--background-message);
-    }
+            div {
+                display: flex;
 
-    input:hover {
-        outline: none;
-    }
+                span {
+                    /*background-color: aqua; */
+                    height: 2.5rem;
+                    width: 2.5rem;
+                    display: flex;
+                    flex-direction: row;
+                    border-radius: 100px;
+                    justify-content: center;
+                    align-items: center;
+                }
 
+                span:hover {
+                    background-color: gray;
+                }
+            
+                }
+                svg {
+                    height: 1.5rem;
+                    width: 1.5rem;
+                }                
+            }
+
+    }
+    
+input {
+    border: none;
+    padding: 0.5rem;
+    width: min-content;
+    width: 100%;
+    background-color: inherit;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input:hover {
+    outline: none;
+    border: none;
 }

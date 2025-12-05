@@ -18,12 +18,8 @@ para los 3 iconos del menu principal
 10. Meter a la barra de busqueda del input el icono de busqueda
 posiblemente como background
 
-11. Hacer el header del MessageBox
-
-12. Hacer el form del MessageBox (Parte donde se escribe y manda mensaje)
-
 13. Al contactlist y al messagebox meterle barra deslizante.
 
 14. Averiguar un poco sobre el funcionamiento del useParams()
 
-15. Arreglar el MessagesFooter
+16. Hacer funcional la searchbar
