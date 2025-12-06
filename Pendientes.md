@@ -15,8 +15,7 @@ para los 3 iconos del menu principal
 
 9. Buscar cambiar los iconos de los contactos para que sean mas variados
 
-10. Meter a la barra de busqueda del input el icono de busqueda
-posiblemente como background
+10. Ajustar el tamanio de los objetos
 
 13. Al contactlist y al messagebox meterle barra deslizante.
 
