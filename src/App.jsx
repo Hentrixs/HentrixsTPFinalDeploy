@@ -8,7 +8,6 @@ import MessageBox from "./Components/MessageBox/MessageBox"
 import { BrowserRouter } from "react-router"
 import { Route, Routes } from "react-router"
 import MessagesScreen from "./Screens/MessagesScreen/MessagesScreen"
-import TestComponent from "./Components/TestComponents/TestComponent"
 
 function App (){
 
@@ -33,7 +32,7 @@ function App (){
         <MessagesScreen />
       } />
       <Route path="/testcomponent" element={
-        <TestComponent />
+        <h1>TEST</h1>
       }/>
     </Routes>     /* TODO= Borrar /testcomponent al finalizar */
   )

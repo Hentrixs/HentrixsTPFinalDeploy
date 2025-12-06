@@ -1,12 +1,23 @@
+import messageService from '../../services/messageService';
 import MessageBoxFooter from '../MessageBoxFooter/MessageBoxFooter';
 import MessageBoxHeader from '../MessageBoxHeader/MessageBoxHeader';
+import MessageBoxMessages from '../MessageBoxMessages/MessageBoxMessages';
 import './MessageBox.css'
 
 import React, { useState } from 'react'
 
 export default function MessageBox() {
-  const [messageBoxState,setmessageBoxState] = useState(true);
+  //const [messageBoxState,setmessageBoxState] = useState(true);
+  
+
   return (
+    <div className='messagebox-container'>
+      <MessageBoxHeader />
+      <MessageBoxMessages id={1}/>
+      <MessageBoxFooter />
+    </div>
+
+    /*
     <div className='messagebox-container'>
       <MessageBoxHeader />
       <div className='messagebox-container2'>
@@ -21,7 +32,9 @@ export default function MessageBox() {
           : 
           <p>No hay chat seleccionado</p>}
       </div>
+      
       <MessageBoxFooter />
     </div>
+    */
   )
 }
