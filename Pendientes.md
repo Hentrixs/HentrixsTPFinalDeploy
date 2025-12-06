@@ -1,6 +1,9 @@
 1. Hacer que al hacer click en un contacto muestre el chat message
+
 Para hacer esto sera necesario generar probablemente en la carpeta data
+
 un archivo llamado contactMessages.js, tambien sera necesario que de alguna forma
+
 agarremos el mismo message box del contacto, para esto podria usarse la ID.
 
 2. Arreglar tamanio de iconos hasta la resolucion 1080p, si es necesario agregar 

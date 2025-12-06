@@ -9,9 +9,11 @@ import ContactSearchForm from '../ContactSearchForm/ContactSearchForm'
 import ContactList from '../ContactList/ContactList'
 import { getContactList } from '../../services/contactService'
 
-export default function ContactSidebar() {
+export default function ContactSidebar({setMessageBoxText}) {
     const [contactState, setContactState] = useState([])
     const [loadingContactsState, setLoadingContactState] = useState(true)
+
+
 
     /* loadContactList tiene la responsabilidad de cargar del servicio la lista de contactos */
     function loadContactList (){
@@ -49,14 +51,18 @@ export default function ContactSidebar() {
     )
     console.log({loadingContactsState, contactState})
     
-   
+    
     return (
         <aside>
             <div>
                 <ContactSearchForm/>
                 {/*<a>Crear contacto</a>*/}
             </div>
-            <ContactList contactState={contactState} loadingContactsState={loadingContactsState}/>
+            <ContactList 
+            contactState={contactState} 
+            loadingContactsState={loadingContactsState}
+            setMessageBoxText={setMessageBoxText}
+            />
         </aside>
     )
 }

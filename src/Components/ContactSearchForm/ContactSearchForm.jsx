@@ -36,8 +36,6 @@ export default function ContactSearchForm() {
     })
   }
   
-  console.log(ButtonState);
-
   return (
     <div className='contact-search-form'>
       <form action="#">

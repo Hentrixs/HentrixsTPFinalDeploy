@@ -2,9 +2,11 @@ import React from 'react'
 import messageService from '../../services/messageService';
 import './MessageBoxMessages.css'
 
-export default function MessageBoxMessages(id) { // Aca debo hacer que funcione por id despues
+export default function MessageBoxMessages({id}) { // Aca debo hacer que funcione por id despues
+
+    // Buscar forma de desempaquetar id
     
-    const contact = messageService(1); // aca debe ir la id tambien
+    const contact = messageService(id); // aca debe ir la id tambien
     console.log(contact); // borrar esto despues
 
     return (

@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './ContactList.css'
 
 export default function ContactList(props) {
+
+    const [Messagelist,setMessagelist] = useState();
+
+    const handleClick = (id) => {
+        console.log(`ID = ${id}`);
+        props.setMessageBoxText(id);
+    }
+
     if(props.loadingContactsState){
         return (
             <div>Cargando contactos...</div>
@@ -20,7 +28,7 @@ export default function ContactList(props) {
                 function (contact){
                     return (
                         <a key={contact.contact_id}>
-                            <div className='subdiv'>
+                            <div className='subdiv' onClick={() => {handleClick(contact.contact_id)}}>
                                 <div>
                                     <img className='contact-avatar' src={contact.contact_avatar} alt={contact.contact_name} />
                                 </div>

@@ -11,6 +11,8 @@ import MessagesScreen from "./Screens/MessagesScreen/MessagesScreen"
 
 function App (){
 
+  const [MessageBoxText,setMessageBoxText] = useState(1);
+
   return (
     <Routes>
       <Route path="/Whatsapp" element={
@@ -18,13 +20,13 @@ function App (){
           <div className="contact-list-container">
               <div>
                 <WhatsAppHeader />
-                <ContactSidebar/>
+                <ContactSidebar setMessageBoxText={setMessageBoxText}/>
               </div>
               <WhatsappFooter />
           </div>
           <div className="messages-container"> {/* Aca tengo que ver como chota hacer para que esto se renderize
           Solamente por encima de los 768px (MessagesScreen)*/}
-            <MessageBox />
+            <MessageBox component_id={MessageBoxText} />
           </div>   
         </div>
       }/>
