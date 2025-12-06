@@ -3,9 +3,9 @@ import React from 'react'
 import './MessageBoxHeader.css'
 import { getContactById, getContactList } from '../../services/contactService'
 
-export default function MessageBoxHeader() {
+export default function MessageBoxHeader({MessageBoxAvatar}) {
 
-  const contact = getContactById(1);
+  const contact = getContactById(MessageBoxAvatar);
 
   return (
     <div className='messagebox-header'>

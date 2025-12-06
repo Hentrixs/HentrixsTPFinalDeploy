@@ -11,7 +11,7 @@ import MessagesScreen from "./Screens/MessagesScreen/MessagesScreen"
 
 function App (){
 
-  const [MessageBoxText,setMessageBoxText] = useState(1);
+  const [MessageBoxTextAndAvatar,setMessageBoxText] = useState(1);
 
   return (
     <Routes>
@@ -26,7 +26,7 @@ function App (){
           </div>
           <div className="messages-container"> {/* Aca tengo que ver como chota hacer para que esto se renderize
           Solamente por encima de los 768px (MessagesScreen)*/}
-            <MessageBox component_id={MessageBoxText} />
+            <MessageBox component_id={MessageBoxTextAndAvatar} />
           </div>   
         </div>
       }/>

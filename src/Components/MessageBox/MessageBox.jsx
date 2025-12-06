@@ -12,7 +12,7 @@ export default function MessageBox({component_id}) {
 
   return (
     <div className='messagebox-container'>
-      <MessageBoxHeader />
+      <MessageBoxHeader MessageBoxAvatar={component_id} />
       <MessageBoxMessages id={component_id} />
       <MessageBoxFooter />
     </div>
