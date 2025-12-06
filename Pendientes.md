@@ -17,7 +17,7 @@ para los 3 iconos del menu principal
 
 10. Ajustar el tamanio de los objetos
 
-13. Al contactlist y al messagebox meterle barra deslizante.
+13. al messagebox meterle barra deslizante.
 
 14. Averiguar un poco sobre el funcionamiento del useParams()
 
