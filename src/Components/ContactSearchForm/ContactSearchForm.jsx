@@ -28,10 +28,11 @@ export default function ContactSearchForm(props) {
   const handleClick = (id,name_request) => {
 
     if (name_request === "unread") {
-      console.log("unreaded");
       props.loadContactList("unread");
     } else if (name_request === "all") {
       props.loadContactList();
+    } else if (name_request === "favourites") {
+      props.loadContactList("favourites")
     }
 
     setButtonState((prev) => {

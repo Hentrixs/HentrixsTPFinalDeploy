@@ -11,6 +11,11 @@ export function getContactList (filter = "all"){
                 return contact.contact_unseen_messages > 1 ;
             })
             break
+        case "favourites":
+            return contact_data.filter((contact) => {
+                return contact.contact_favorite === true;
+            })
+            break
     }
 }
 

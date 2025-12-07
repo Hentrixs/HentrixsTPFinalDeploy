@@ -36,7 +36,9 @@ export default function ContactSidebar({setMessageBoxText}) {
                     console.log("ALL OK")
                 } else if (filter === "all") {
                     contact_list = getContactList();
-                };
+                } else if (filter === "favourites") {
+                    contact_list = getContactList("favourites");
+                }
 
                 //Guardo la respuesta en mi estado
                 setContactState(contact_list)
