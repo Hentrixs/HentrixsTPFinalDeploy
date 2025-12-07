@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './ContactSearchForm.css'
 
-export default function ContactSearchForm() {
+export default function ContactSearchForm(props) {
   const [ButtonState,setButtonState] = useState([
     {
       id:1,
@@ -25,7 +25,14 @@ export default function ContactSearchForm() {
     }
   ]);
 
-  const handleClick = (id) => {
+  const handleClick = (id,name_request) => {
+
+    if (name_request === "unread") {
+      console.log("unreaded");
+      props.loadContactList("unread");
+    } else if (name_request === "all") {
+      props.loadContactList();
+    }
 
     setButtonState((prev) => {
       return prev.map((item) => {
@@ -52,7 +59,7 @@ export default function ContactSearchForm() {
             <button key={button.id}
             // Arreglar el color aca (black)
             style={{backgroundColor: button.name_value ? "green" : "black"}}
-            onClick={() => handleClick(button.id)} 
+            onClick={() => handleClick(button.id,button.name)} 
             >{button.name}
             </button>
           )

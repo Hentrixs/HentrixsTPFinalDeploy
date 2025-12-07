@@ -16,8 +16,9 @@ export default function ContactSidebar({setMessageBoxText}) {
 
 
     /* loadContactList tiene la responsabilidad de cargar del servicio la lista de contactos */
-    function loadContactList (){
+    function loadContactList(filter = "all") {
         setLoadingContactState(true)
+
         /* Esta funcion nos permite atrasar la ejecucion de otra funcion
         Recibe 2 parametros: 
         1. La accion a retrasar
@@ -28,7 +29,15 @@ export default function ContactSidebar({setMessageBoxText}) {
             function () {
                 console.log('Cargando la lista de contactos')
                 //Cargo la respuesta del servidor
-                const contact_list = getContactList()
+                let contact_list; //despues tengo que ver como hacer esto con un const
+
+                if (filter === "unread") {
+                    contact_list = getContactList("unread");
+                    console.log("ALL OK")
+                } else if (filter === "all") {
+                    contact_list = getContactList();
+                };
+
                 //Guardo la respuesta en mi estado
                 setContactState(contact_list)
                 setLoadingContactState(false)
@@ -48,14 +57,12 @@ export default function ContactSidebar({setMessageBoxText}) {
     useEffect (
         loadContactList,
         []
-    )
-    console.log({loadingContactsState, contactState})
-    
+    )    
     
     return (
         <aside>
             <div>
-                <ContactSearchForm/>
+                <ContactSearchForm loadContactList={loadContactList}/>
                 {/*<a>Crear contacto</a>*/}
             </div>
             <ContactList 

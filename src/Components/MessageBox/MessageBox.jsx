@@ -8,8 +8,6 @@ import React, { useState } from 'react'
 
 export default function MessageBox({component_id}) {
   
-  console.log('ID EN MESSAGEBOX = ' + component_id)
-
   return (
     <div className='messagebox-container'>
       <MessageBoxHeader MessageBoxAvatar={component_id} />

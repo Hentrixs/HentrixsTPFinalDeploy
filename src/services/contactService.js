@@ -1,8 +1,17 @@
 import contact_data from "../data/contactData";
 
-export function getContactList (){
+export function getContactList (filter = "all"){
     /* En un futuro esta funcion haria la llamada al servidor */
-    return contact_data
+    switch(filter) {
+        case "all":
+            return contact_data
+            break
+        case "unread":
+            return contact_data.filter((contact) => {
+                return contact.contact_unseen_messages > 1 ;
+            })
+            break
+    }
 }
 
 export function getContactById (contact_id) {

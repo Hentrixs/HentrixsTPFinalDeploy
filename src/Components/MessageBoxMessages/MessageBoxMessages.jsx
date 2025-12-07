@@ -7,7 +7,6 @@ export default function MessageBoxMessages({id}) { // Aca debo hacer que funcion
     // Buscar forma de desempaquetar id
     
     const contact = messageService(id); // aca debe ir la id tambien
-    console.log(contact); // borrar esto despues
 
     return (
     <div className='text'>

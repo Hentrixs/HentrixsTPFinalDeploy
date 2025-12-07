@@ -3,10 +3,9 @@ import './ContactList.css'
 
 export default function ContactList(props) {
 
-    const [Messagelist,setMessagelist] = useState();
+    //const [Messagelist,setMessagelist] = useState();
 
     const handleClick = (id) => {
-        console.log(`ID = ${id}`);
         props.setMessageBoxText(id);
     }
 
@@ -21,6 +20,7 @@ export default function ContactList(props) {
             <div>No hay contactos</div>
         )
     }
+
   return (
     <div className='contact-container'>
         {
