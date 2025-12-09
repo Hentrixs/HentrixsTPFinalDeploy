@@ -1,11 +1,14 @@
 
-import React from 'react'
+import React, { useContext } from 'react'
 import './MessageBoxHeader.css'
 import { getContactById, getContactList } from '../../services/contactService'
+import { MessageBoxContext } from '../../Contexts/MessageBoxContext';
 
-export default function MessageBoxHeader({MessageBoxAvatar}) {
+export default function MessageBoxHeader() {
 
-  const contact = getContactById(MessageBoxAvatar);
+  const context = useContext(MessageBoxContext);
+  const contact = getContactById(context.MessageBoxTextAndAvatar);
+
 
   return (
     <div className='messagebox-header'>

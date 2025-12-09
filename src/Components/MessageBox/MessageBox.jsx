@@ -6,12 +6,12 @@ import './MessageBox.css'
 
 import React, { useState } from 'react'
 
-export default function MessageBox({component_id}) {
+export default function MessageBox() {
   
   return (
     <div className='messagebox-container'>
-      <MessageBoxHeader MessageBoxAvatar={component_id} />
-      <MessageBoxMessages id={component_id} />
+      <MessageBoxHeader />
+      <MessageBoxMessages />
       <MessageBoxFooter />
     </div>
 

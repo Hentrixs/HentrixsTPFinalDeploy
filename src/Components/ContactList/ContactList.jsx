@@ -1,21 +1,24 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './ContactList.css'
+import { MessageBoxContext } from '../../Contexts/MessageBoxContext';
 
 export default function ContactList(props) {
 
     //const [Messagelist,setMessagelist] = useState();
 
-    const handleClick = (id) => {
-        props.setMessageBoxText(id);
-    }
+    const {setMessageBoxText} = useContext(MessageBoxContext)
 
-    if(props.loadingContactsState){
+    const handleClick = (id) => {
+        setMessageBoxText(id);
+    } 
+    
+    if(props.loadingContactsState) {
         return (
             <div>Cargando contactos...</div>
         )
     }
 
-    if(props.contactState.length === 0){
+    if(props.contactState.length === 0) {
         return (
             <div>No hay contactos</div>
         )
