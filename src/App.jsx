@@ -8,7 +8,7 @@ import MessageBox from "./Components/MessageBox/MessageBox"
 import { BrowserRouter } from "react-router"
 import { Route, Routes } from "react-router"
 import MessagesScreen from "./Screens/MessagesScreen/MessagesScreen"
-import MessageBoxContextProvider from "./Contexts/MessageBoxContext"
+import MessageBoxContextProvider from "./Contexts/MessageBoxContext/MessageBoxContext"
 
 function App (){
 

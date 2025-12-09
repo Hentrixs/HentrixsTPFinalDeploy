@@ -2,7 +2,7 @@ import React from 'react'
 import messageService from '../../services/messageService';
 import './MessageBoxMessages.css'
 import { useContext } from 'react';
-import { MessageBoxContext } from '../../Contexts/MessageBoxContext';
+import { MessageBoxContext } from '../../Contexts/MessageBoxContext/MessageBoxContext';
 
 export default function MessageBoxMessages() { // Aca debo hacer que funcione por id despues
 

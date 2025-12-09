@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import './ContactList.css'
-import { MessageBoxContext } from '../../Contexts/MessageBoxContext';
+import { MessageBoxContext } from '../../Contexts/MessageBoxContext/MessageBoxContext';
 
 export default function ContactList(props) {
 

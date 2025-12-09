@@ -2,7 +2,7 @@
 import React, { useContext } from 'react'
 import './MessageBoxHeader.css'
 import { getContactById, getContactList } from '../../services/contactService'
-import { MessageBoxContext } from '../../Contexts/MessageBoxContext';
+import { MessageBoxContext } from '../../Contexts/MessageBoxContext/MessageBoxContext';
 
 export default function MessageBoxHeader() {
 
