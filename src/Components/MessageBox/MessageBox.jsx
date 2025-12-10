@@ -1,10 +1,7 @@
-import messageService from '../../services/messageService';
 import MessageBoxFooter from '../MessageBoxFooter/MessageBoxFooter';
 import MessageBoxHeader from '../MessageBoxHeader/MessageBoxHeader';
 import MessageBoxMessages from '../MessageBoxMessages/MessageBoxMessages';
 import './MessageBox.css'
-
-import React, { useState } from 'react'
 
 export default function MessageBox() {
   

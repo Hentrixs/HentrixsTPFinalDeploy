@@ -1,24 +1,26 @@
 import React, { useContext, useState } from 'react'
 import './ContactList.css'
 import { MessageBoxContext } from '../../Contexts/MessageBoxContext/MessageBoxContext';
+import { ContactSidebarContext } from '../../Contexts/ContactSideBarContext/ContactSideBarContext';
 
 export default function ContactList(props) {
 
     //const [Messagelist,setMessagelist] = useState();
 
+    const {contactState,loadingContactsState} = useContext(ContactSidebarContext);
     const {setMessageBoxText} = useContext(MessageBoxContext)
 
     const handleClick = (id) => {
         setMessageBoxText(id);
     } 
     
-    if(props.loadingContactsState) {
+    if(loadingContactsState) {
         return (
             <div>Cargando contactos...</div>
         )
     }
 
-    if(props.contactState.length === 0) {
+    if(contactState.length === 0) {
         return (
             <div>No hay contactos</div>
         )
@@ -27,7 +29,7 @@ export default function ContactList(props) {
   return (
     <div className='contact-container'>
         {
-            props.contactState.map(
+            contactState.map(
                 function (contact){
                     return (
                         <a key={contact.contact_id}>

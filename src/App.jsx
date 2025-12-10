@@ -9,6 +9,8 @@ import { BrowserRouter } from "react-router"
 import { Route, Routes } from "react-router"
 import MessagesScreen from "./Screens/MessagesScreen/MessagesScreen"
 import MessageBoxContextProvider from "./Contexts/MessageBoxContext/MessageBoxContext"
+import ContactSidebarContext from "./Contexts/ContactSideBarContext/ContactSideBarContext"
+import ContactSidebarContextProvider from "./Contexts/ContactSideBarContext/ContactSideBarContext"
 
 function App (){
 
@@ -24,14 +26,16 @@ function App (){
             <div className="contact-list-container">
                 <div>
                   <WhatsAppHeader />
-                  <ContactSidebar /*setMessageBoxText={setMessageBoxText}*/ />
+                  <ContactSidebarContextProvider>
+                    <ContactSidebar />
+                  </ContactSidebarContextProvider>
                 </div>
                 <WhatsappFooter />
             </div>
 
             <div className="messages-container"> {/* Aca tengo que ver como chota hacer para que esto se renderize
             Solamente por encima de los 768px (MessagesScreen)*/}
-              <MessageBox /* component_id={MessageBoxTextAndAvatar} */ />
+              <MessageBox />
             </div>
           </div>
         </MessageBoxContextProvider>
@@ -40,11 +44,8 @@ function App (){
       <Route path="/messages/:contact_id" element={
         <MessagesScreen />
       } />
-      <Route path="/testcomponent" element={
-        <h1>TEST</h1>
-      }/>
 
-    </Routes>     /* TODO= Borrar /testcomponent al finalizar */
+    </Routes>
   )
 }
 
