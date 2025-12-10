@@ -1,3 +1,4 @@
+1. ver el video (la parte que me perdi del video del profe)
 
 2. Arreglar tamanio de iconos hasta la resolucion 1080p, si es necesario agregar 
 otra media query (hecho, pero despues lo checkeare otra vez)
@@ -15,6 +16,13 @@ para los 3 iconos del menu principal (eso no es relevante ahora mismo)
 
 16. Hacer funcional la searchbar
 
-17. Intentar modificar todo el sistema de traspaso de props (eliminar el props drill entre componentes) usando el useContext().
+17. Intentar modificar todo el sistema de traspaso de props (eliminar el props drill entre componentes) usando el useContext(). 
+
+18. Mejorar el sitema de useContext() con el outlet, para eso averiguar para que servia este
+y como aplicar el useContext() con el react-router 
 
 18. Buscar otros ejemplos de copias de Whatsapp y inspirarse para agregar mas funcionalidad
+
+19. Arreglar el tema de messagebox para que si es send_by_me se muestre a la derecha, por consiguiente habria que modificar el contact_messages
+
+20. Mejorar detalles del contact_list y del messagebox
