@@ -7,7 +7,6 @@ import { useParams } from 'react-router';
 
 export default function MessageBoxHeader() {
 
-  const context = useContext(MessageBoxContext);
   const {id} = useParams();
   const contact = getContactById(Number(id));
 

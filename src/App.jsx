@@ -43,17 +43,8 @@ function App (){
           </MessageBoxContextProvider>
         } />
       </Route>
-      {/*
-      <Route path="/test" element={
-        <MessageBoxContextProvider>
-          <ContactSidebarContextProvider>
-            <ContactSidebar />    
-          </ContactSidebarContextProvider>
-        </MessageBoxContextProvider>
-      }>
-        <Route path="message" element={<MessageBox />} />
-      </Route>
-      */}
+      
+      
     </Routes>       
   )
 }
