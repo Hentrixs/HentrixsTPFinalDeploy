@@ -12,24 +12,5 @@ export default function MessageBox() {
       <MessageBoxFooter />
     </div>
 
-    /*
-    <div className='messagebox-container'>
-      <MessageBoxHeader />
-      <div className='messagebox-container2'>
-          {messageBoxState ? 
-          <div>
-            <p>Mensaje</p>
-            <p>Mensaje</p>
-            <p>Mensaje</p>
-            <p>Mensaje</p>
-            <p>Mensaje</p>
-          </div> 
-          : 
-          <p>No hay chat seleccionado</p>}
-      </div>
-      
-      <MessageBoxFooter />
-    </div>
-    */
   )
 }

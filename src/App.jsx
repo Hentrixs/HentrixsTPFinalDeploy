@@ -5,7 +5,7 @@ import WhatsappFooter from "./Components/WhatsappFooter/WhatsappFooter"
 
 import './global.css'
 import MessageBox from "./Components/MessageBox/MessageBox"
-import { Route, Routes } from "react-router"
+import { Outlet, Route, Routes } from "react-router"
 import MessagesScreen from "./Screens/MessagesScreen/MessagesScreen"
 import MessageBoxContextProvider from "./Contexts/MessageBoxContext/MessageBoxContext"
 import ContactSidebarContextProvider from "./Contexts/ContactSideBarContext/ContactSideBarContext"
@@ -28,19 +28,32 @@ function App (){
                 </div>
                 <WhatsappFooter />
             </div>
-
             <div className="messages-container"> {/* Aca tengo que ver como chota hacer para que esto se renderize
-            Solamente por encima de los 768px (MessagesScreen)*/}
-              <MessageBox />
+            Solamente por encima de los 768px (MessagesScreen) */}
+              <Outlet />
             </div>
           </div>
         </MessageBoxContextProvider>
-      }/>
-
-      <Route path="/messages/:contact_id" element={
-        <MessagesScreen />
-      } />
-
+      }>
+        <Route path="chat" element={
+          <MessageBoxContextProvider>
+            <div className="messages-container">
+              <MessageBox />
+            </div>
+          </MessageBoxContextProvider>
+        } />
+      </Route>
+      {/*
+      <Route path="/test" element={
+        <MessageBoxContextProvider>
+          <ContactSidebarContextProvider>
+            <ContactSidebar />    
+          </ContactSidebarContextProvider>
+        </MessageBoxContextProvider>
+      }>
+        <Route path="message" element={<MessageBox />} />
+      </Route>
+      */}
     </Routes>       
   )
 }

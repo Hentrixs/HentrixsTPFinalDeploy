@@ -2,11 +2,9 @@ import React, { useContext, useState } from 'react'
 import './ContactList.css'
 import { MessageBoxContext } from '../../Contexts/MessageBoxContext/MessageBoxContext';
 import { ContactSidebarContext } from '../../Contexts/ContactSideBarContext/ContactSideBarContext';
-import { Link } from 'react-router';
+import { Link, Outlet } from 'react-router';
 
 export default function ContactList(props) {
-
-    //const [Messagelist,setMessagelist] = useState();
 
     const {contactState,loadingContactsState} = useContext(ContactSidebarContext);
     const {setMessageBoxText} = useContext(MessageBoxContext)
@@ -33,7 +31,7 @@ export default function ContactList(props) {
                 contactState.map(
                     function (contact){
                         return (
-                            <Link to={"/"} key={contact.contact_id} className='Link'>
+                            <Link to={"/chat"} key={contact.contact_id} className='Link'>
                                 <div className='subdiv' onClick={() => {handleClick(contact.contact_id)}}>
                                     <div>
                                         <img className='contact-avatar' src={contact.contact_avatar} alt={contact.contact_name} />
