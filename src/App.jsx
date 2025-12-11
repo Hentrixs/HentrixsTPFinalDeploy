@@ -15,7 +15,7 @@ function App (){
   return (
     <Routes>
       
-      <Route path="/Whatsapp" element={
+      <Route path="/" element={
         <MessageBoxContextProvider>
           <div className="app-container">
 
