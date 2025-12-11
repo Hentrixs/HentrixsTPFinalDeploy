@@ -5,16 +5,12 @@ import WhatsappFooter from "./Components/WhatsappFooter/WhatsappFooter"
 
 import './global.css'
 import MessageBox from "./Components/MessageBox/MessageBox"
-import { BrowserRouter } from "react-router"
 import { Route, Routes } from "react-router"
 import MessagesScreen from "./Screens/MessagesScreen/MessagesScreen"
 import MessageBoxContextProvider from "./Contexts/MessageBoxContext/MessageBoxContext"
-import ContactSidebarContext from "./Contexts/ContactSideBarContext/ContactSideBarContext"
 import ContactSidebarContextProvider from "./Contexts/ContactSideBarContext/ContactSideBarContext"
 
 function App (){
-
-  //const [MessageBoxTextAndAvatar,setMessageBoxText] = useState(1);
 
   return (
     <Routes>
@@ -45,7 +41,7 @@ function App (){
         <MessagesScreen />
       } />
 
-    </Routes>
+    </Routes>       
   )
 }
 

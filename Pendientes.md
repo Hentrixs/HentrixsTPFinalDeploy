@@ -1,3 +1,7 @@
+1. Mejorar todo el tema del useContext() agregando un Outlet
+y 4 direcciones con el router (3 para los iconos de abajo y una mas para la 
+messagebox)
+
 1. ver el video (la parte que me perdi del video del profe)
 
 2. Arreglar tamanio de iconos hasta la resolucion 1080p, si es necesario agregar 
@@ -15,11 +19,6 @@ para los 3 iconos del menu principal (eso no es relevante ahora mismo)
 13. al messagebox meterle barra deslizante.
 
 16. Hacer funcional la searchbar
-
-17. Intentar modificar todo el sistema de traspaso de props (eliminar el props drill entre componentes) usando el useContext(). 
-
-18. Mejorar el sitema de useContext() con el outlet, para eso averiguar para que servia este
-y como aplicar el useContext() con el react-router 
 
 18. Buscar otros ejemplos de copias de Whatsapp y inspirarse para agregar mas funcionalidad
 
