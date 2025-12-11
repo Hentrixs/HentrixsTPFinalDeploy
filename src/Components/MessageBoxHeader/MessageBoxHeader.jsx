@@ -3,11 +3,13 @@ import React, { useContext } from 'react'
 import './MessageBoxHeader.css'
 import { getContactById, getContactList } from '../../services/contactService'
 import { MessageBoxContext } from '../../Contexts/MessageBoxContext/MessageBoxContext';
+import { useParams } from 'react-router';
 
 export default function MessageBoxHeader() {
 
   const context = useContext(MessageBoxContext);
-  const contact = getContactById(context.MessageBoxTextAndAvatar);
+  const {id} = useParams();
+  const contact = getContactById(Number(id));
 
   return (
     <div className='messagebox-header'>
