@@ -35,7 +35,7 @@ function App (){
           </div>
         </MessageBoxContextProvider>
       }>
-        <Route path="chat" element={
+        <Route path="chat/:id" element={
           <MessageBoxContextProvider>
             <div className="messages-container">
               <MessageBox />

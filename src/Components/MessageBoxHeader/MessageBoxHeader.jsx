@@ -9,7 +9,6 @@ export default function MessageBoxHeader() {
   const context = useContext(MessageBoxContext);
   const contact = getContactById(context.MessageBoxTextAndAvatar);
 
-
   return (
     <div className='messagebox-header'>
       <div className='messagebox-div-left'>

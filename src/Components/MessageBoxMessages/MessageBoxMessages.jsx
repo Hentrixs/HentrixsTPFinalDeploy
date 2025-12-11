@@ -3,12 +3,12 @@ import messageService from '../../services/messageService';
 import './MessageBoxMessages.css'
 import { useContext } from 'react';
 import { MessageBoxContext } from '../../Contexts/MessageBoxContext/MessageBoxContext';
+import { useParams } from 'react-router';
 
 export default function MessageBoxMessages() { // Aca debo hacer que funcione por id despues
 
-    // Buscar forma de desempaquetar id
-    const id = useContext(MessageBoxContext);
-    const contact = messageService(id.MessageBoxTextAndAvatar); // aca debe ir la id tambien
+    const {id} = useParams();
+    const contact = messageService(Number(id)); // aca debe ir la id tambien
 
     return (
     <div className='text'>

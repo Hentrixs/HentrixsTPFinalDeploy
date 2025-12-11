@@ -31,7 +31,7 @@ export default function ContactList(props) {
                 contactState.map(
                     function (contact){
                         return (
-                            <Link to={"/chat"} key={contact.contact_id} className='Link'>
+                            <Link to={`/chat/${contact.contact_id}`} key={contact.contact_id} className='Link'>
                                 <div className='subdiv' onClick={() => {handleClick(contact.contact_id)}}>
                                     <div>
                                         <img className='contact-avatar' src={contact.contact_avatar} alt={contact.contact_name} />
