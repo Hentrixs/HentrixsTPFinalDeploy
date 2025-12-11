@@ -2,12 +2,7 @@
 y 4 direcciones con el router (3 para los iconos de abajo y una mas para la 
 messagebox)
 
-1. ver el video (la parte que me perdi del video del profe)
-
-19. Arreglar el tema de messagebox para que si es send_by_me se muestre a la derecha, por consiguiente habria que modificar el contact_messages
-
-2. Arreglar tamanio de iconos hasta la resolucion 1080p, si es necesario agregar 
-otra media query (hecho, pero despues lo checkeare otra vez)
+1. Copiar el repo de este proyecto a otra carpeta, y en general hacer el deploy como mostro el profe en el video
 
 3. Meter la hora de cuando se mando el ultimo mensaje en el contactlist (eso no es relevante ahora mismo)
 
@@ -15,6 +10,9 @@ otra media query (hecho, pero despues lo checkeare otra vez)
 para los 3 iconos del menu principal (eso no es relevante ahora mismo)
 
 5. Meter funcionalidad al boton groups y arreglar el color
+
+2. Arreglar tamanio de iconos hasta la resolucion 1080p, si es necesario agregar 
+otra media query (hecho, pero despues lo checkeare otra vez)
 
 10. Ajustar el tamanio de los objetos
 

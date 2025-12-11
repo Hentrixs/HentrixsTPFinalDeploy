@@ -1,29 +1,28 @@
-import React from 'react';
 
 export const messageData = [
   {
     id: 1,
     messages: [
-      { user1: "Mesagetest1 from user1" },
+      { send_by_me: "Mesagetest1 from user1" },
       { user2: "Messagetest2 from user2" },
-      { user1: "Messagetest3 from user1" }
+      { send_by_me: "Messagetest3 from user1" }
     ]
   },
   {
     id: 2,
     messages: [
       { user2: "¡Acabo de terminar el proyecto! 🎉" },
-      { user1: "¡Felicidades! ¿Cómo te sientes?" },
+      { send_by_me: "¡Felicidades! ¿Cómo te sientes?" },
       { user2: "Aliviado y feliz" },
-      { user1: "Te mereces un descanso" }
+      { send_by_me: "Te mereces un descanso" }
     ]
   },
   {
     id: 3,
     messages: [
-      { user1: "¿Vamos por café mañana?" },
+      { send_by_me: "¿Vamos por café mañana?" },
       { user2: "Claro, ¿a qué hora?" },
-      { user1: "10 AM en la cafetería nueva" },
+      { send_by_me: "10 AM en la cafetería nueva" },
       { user2: "Perfecto, nos vemos" }
     ]
   },
@@ -31,17 +30,17 @@ export const messageData = [
     id: 4,
     messages: [
       { user2: "¿Recuerdas dónde dejamos el cable HDMI?" },
-      { user1: "Creo que en el cajón del escritorio" },
+      { send_by_me: "Creo que en el cajón del escritorio" },
       { user2: "Lo busqué, no está" },
-      { user1: "Revisa en la mochila azul" }
+      { send_by_me: "Revisa en la mochila azul" }
     ]
   },
   {
     id: 5,
     messages: [
-      { user1: "Estoy aprendiendo React" },
+      { send_by_me: "Estoy aprendiendo React" },
       { user2: "¡Genial! ¿Cómo te va?" },
-      { user1: "Bien, pero los hooks me confunden" },
+      { send_by_me: "Bien, pero los hooks me confunden" },
       { user2: "Es normal al principio, practica" }
     ]
   },
@@ -49,17 +48,17 @@ export const messageData = [
     id: 6,
     messages: [
       { user2: "¡Mira esta foto de mi perro! 🐶" },
-      { user1: "¡Qué lindo! ¿Cómo se llama?" },
+      { send_by_me: "¡Qué lindo! ¿Cómo se llama?" },
       { user2: "Rocky" },
-      { user1: "Adorable 😍" }
+      { send_by_me: "Adorable 😍" }
     ]
   },
   {
     id: 7,
     messages: [
-      { user1: "El WiFi no funciona" },
+      { send_by_me: "El WiFi no funciona" },
       { user2: "¿Ya intentaste reiniciar el router?" },
-      { user1: "Sí, sigue sin funcionar" },
+      { send_by_me: "Sí, sigue sin funcionar" },
       { user2: "Llama al soporte técnico" }
     ]
   },
@@ -67,17 +66,17 @@ export const messageData = [
     id: 8,
     messages: [
       { user2: "¿Vas a la fiesta de Carlos?" },
-      { user1: "No sé, ¿tú vas?" },
+      { send_by_me: "No sé, ¿tú vas?" },
       { user2: "Sí, vamos juntos" },
-      { user1: "Dale, te paso a buscar" }
+      { send_by_me: "Dale, te paso a buscar" }
     ]
   },
   {
     id: 9,
     messages: [
-      { user1: "Terminé de leer ese libro" },
+      { send_by_me: "Terminé de leer ese libro" },
       { user2: "¿Y? ¿Te gustó?" },
-      { user1: "Mucho, el final me sorprendió" },
+      { send_by_me: "Mucho, el final me sorprendió" },
       { user2: "Lo leeré entonces" }
     ]
   },
@@ -85,17 +84,17 @@ export const messageData = [
     id: 10,
     messages: [
       { user2: "Hace frío hoy ❄️" },
-      { user1: "Sí, 12 grados" },
+      { send_by_me: "Sí, 12 grados" },
       { user2: "Perfecto para chocolate caliente" },
-      { user1: "Buena idea, voy a hacer" }
+      { send_by_me: "Buena idea, voy a hacer" }
     ]
   },
   {
     id: 11,
     messages: [
-      { user1: "¿Tienes el número del plomero?" },
+      { send_by_me: "¿Tienes el número del plomero?" },
       { user2: "Sí, te lo paso: 555-1234" },
-      { user1: "Gracias, tengo una fuga" },
+      { send_by_me: "Gracias, tengo una fuga" },
       { user2: "Suerte, avísame cómo te va" }
     ]
   },
@@ -103,17 +102,17 @@ export const messageData = [
     id: 12,
     messages: [
       { user2: "¡Feliz año nuevo! 🎆" },
-      { user1: "¡Igualmente! ¿Propósitos?" },
+      { send_by_me: "¡Igualmente! ¿Propósitos?" },
       { user2: "Aprender un idioma nuevo" },
-      { user1: "Yo hacer más ejercicio" }
+      { send_by_me: "Yo hacer más ejercicio" }
     ]
   },
   {
     id: 13,
     messages: [
-      { user1: "Mi computadora se apagó sola" },
+      { send_by_me: "Mi computadora se apagó sola" },
       { user2: "¿Tiene batería?" },
-      { user1: "Sí, estaba enchufada" },
+      { send_by_me: "Sí, estaba enchufada" },
       { user2: "Puede ser sobrecalentamiento" }
     ]
   },
@@ -121,17 +120,17 @@ export const messageData = [
     id: 14,
     messages: [
       { user2: "¿Viste el atardecer hoy?" },
-      { user1: "No, ¿estuvo bonito?" },
+      { send_by_me: "No, ¿estuvo bonito?" },
       { user2: "Increíble, naranja y rosa" },
-      { user1: "Mañana lo veré" }
+      { send_by_me: "Mañana lo veré" }
     ]
   },
   {
     id: 15,
     messages: [
-      { user1: "Me ascendieron en el trabajo" },
+      { send_by_me: "Me ascendieron en el trabajo" },
       { user2: "¡Felicidades! 🥳" },
-      { user1: "Gracias, estoy muy contento" },
+      { send_by_me: "Gracias, estoy muy contento" },
       { user2: "Lo mereces, celebramos pronto" }
     ]
   },
@@ -139,17 +138,17 @@ export const messageData = [
     id: 16,
     messages: [
       { user2: "¿Sabes cocinar pasta carbonara?" },
-      { user1: "Sí, es fácil" },
+      { send_by_me: "Sí, es fácil" },
       { user2: "¿Me pasas la receta?" },
-      { user1: "Claro, te la escribo" }
+      { send_by_me: "Claro, te la escribo" }
     ]
   },
   {
     id: 17,
     messages: [
-      { user1: "Perdí mis auriculares 😞" },
+      { send_by_me: "Perdí mis auriculares 😞" },
       { user2: "¿Dónde los viste por última vez?" },
-      { user1: "En el auto, creo" },
+      { send_by_me: "En el auto, creo" },
       { user2: "Revisa bajo el asiento" }
     ]
   },
@@ -157,17 +156,17 @@ export const messageData = [
     id: 18,
     messages: [
       { user2: "Estoy organizando un viaje" },
-      { user1: "¿A dónde?" },
+      { send_by_me: "¿A dónde?" },
       { user2: "A la playa en verano" },
-      { user1: "¡Qué buena idea!" }
+      { send_by_me: "¡Qué buena idea!" }
     ]
   },
   {
     id: 19,
     messages: [
-      { user1: "¿Escuchaste la nueva canción?" },
+      { send_by_me: "¿Escuchaste la nueva canción?" },
       { user2: "¿Cuál?" },
-      { user1: "La de ese grupo nuevo" },
+      { send_by_me: "La de ese grupo nuevo" },
       { user2: "No, pásame el link" }
     ]
   },
@@ -175,9 +174,9 @@ export const messageData = [
     id: 20,
     messages: [
       { user2: "Mañana es nuestro aniversario" },
-      { user1: "¡No puedo creer que ya pasó un año!" },
+      { send_by_me: "¡No puedo creer que ya pasó un año!" },
       { user2: "El tiempo vuela" },
-      { user1: "Celebramos con cena" }
+      { send_by_me: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." }
     ]
   }
 ];
