@@ -27,12 +27,16 @@ body {
 html, body {
     height: 100vh;
     width: 100%;
-    overflow: hidden; /* Evita scroll global */
+    overflow: hidden; /* Esto era para evitar el molesto scroll*/
 }
 
 .messages-container {
     display: none;
 }   
+
+.contact-sidebar-container {
+    border-right: 1px solid #2F2E2F;
+}
 
 @media (min-width:513px) {
 
@@ -43,11 +47,7 @@ html, body {
 
 @media (min-width:1176px) {
 
-    .app-container {
-        display: flex;
-    }
-
-    .messages-container {
+    .app-container,.messages-container {
         display: flex;
     }
 
@@ -60,12 +60,17 @@ html, body {
     .contact-list-container {
         border-top: 0;
         display: flex;
+        min-width: 40rem;
         flex-direction: row-reverse;
 
         ul {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
+        }
+
+        .contact-sidebar-container {
+            width: 100%;
         }
     }
 

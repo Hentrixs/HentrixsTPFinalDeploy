@@ -20,7 +20,7 @@ function App (){
           <div className="app-container">
 
             <div className="contact-list-container">
-                <div>
+                <div className="contact-sidebar-container">
                   <WhatsAppHeader />
                   <ContactSidebarContextProvider>
                     <ContactSidebar />
