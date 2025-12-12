@@ -9,16 +9,16 @@ import { Outlet, Route, Routes } from "react-router"
 import MessagesScreen from "./Screens/MessagesScreen/MessagesScreen"
 import MessageBoxContextProvider from "./Contexts/MessageBoxContext/MessageBoxContext"
 import ContactSidebarContextProvider from "./Contexts/ContactSideBarContext/ContactSideBarContext"
+import Communities from "./Components/Communities/Communities"
+import Status from "./Components/Status/Status"
 
 function App (){
 
   return (
-    <Routes>
-      
+    <Routes> {/* Nota= fijarse si lo del messagebox se puede hacer ocultando todo lo que no sea este*/}
       <Route path="/" element={
         <MessageBoxContextProvider>
           <div className="app-container">
-
             <div className="contact-list-container">
                 <div className="contact-sidebar-container">
                   <WhatsAppHeader />
@@ -37,15 +37,17 @@ function App (){
       }>
         <Route path="chat/:id" element={
           <MessageBoxContextProvider>
-            <ContactSidebarContextProvider>
-              <div className="messages-container">
-                <MessageBox />
-              </div>
-            </ContactSidebarContextProvider>
+            <MessageBox />
           </MessageBoxContextProvider>
         } />
       </Route>      
-    </Routes>       
+        <Route path="/status" element={
+          <Status />
+          } />
+        <Route path="/communities" element={
+          <Communities />
+          } />
+    </Routes>
   )
 }
 

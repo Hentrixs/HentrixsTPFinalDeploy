@@ -4,10 +4,9 @@ RFC = React Functional Component
 */
 import './ContactSidebar.css';
 
-import React, { useContext, useEffect, useState } from 'react'
+import { useContext, useEffect } from 'react'
 import ContactSearchForm from '../ContactSearchForm/ContactSearchForm'
 import ContactList from '../ContactList/ContactList'
-import { getContactList } from '../../services/contactService'
 import { ContactSidebarContext } from '../../Contexts/ContactSideBarContext/ContactSideBarContext';
 
 export default function ContactSidebar() {
@@ -27,10 +26,8 @@ export default function ContactSidebar() {
     
     return (
         <aside>
-            <div>
                 <ContactSearchForm loadContactList={loadContactList}/>
                 {/*<a>Crear contacto</a>*/}
-            </div>
             <ContactList />
         </aside>
     );

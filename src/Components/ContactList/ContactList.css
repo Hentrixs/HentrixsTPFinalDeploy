@@ -4,13 +4,8 @@
 }
 
 .contact-container {
-    /*border: 1px solid blue;*/
     margin: 0px;
-    display: flex;
-    flex-direction: column;
-    height: 80vh;
     overflow-y: scroll;
-
 }
 
 .contact-container::-webkit-scrollbar {

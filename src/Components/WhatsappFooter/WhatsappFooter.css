@@ -1,6 +1,7 @@
 .whatsapp-footer {
-    
     height: auto;
+    display: flex;
+    flex-direction: column;
     background-color: var(--background-message);
     border-top: 1px solid #292829;
 

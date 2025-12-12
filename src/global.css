@@ -1,10 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     background-color: var(--background-secondary);
-    height: 100vw;
-    margin: 0px;
+    height: 100%; /* 100 vw before */
+    width: 100%; /* overflow: hidden */
+}
+
+html {
+    height: 100%; /* 100 vw before */
     width: 100%;
-    padding: 0px;
+ /*Esto era para evitar el molesto scroll*/ /*overflow: hidden */
 }
 
 :root {
@@ -14,68 +23,59 @@ body {
     --background-message: #252627;
 }
 
-.messages-container,.app-container {
-    width: 100%;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
+.contact-sidebar-container {
+    border-right: 1px solid #2F2E2F;
     height: 100vh;
-    width: 100%;
-    overflow: hidden; /* Esto era para evitar el molesto scroll*/
 }
 
 .messages-container {
     display: none;
-}   
-
-.contact-sidebar-container {
-    border-right: 1px solid #2F2E2F;
 }
 
 @media (min-width:513px) {
 
     .contact-buttons {
         justify-content: flex-start;
-    }    
+    }   
+    
 }
 
 @media (min-width:1176px) {
 
     .app-container,.messages-container {
         display: flex;
+        width: 100%;
+        height: auto;
     }
 
     .whatsapp-footer {
         border: 0;
         border-right: 1px solid var(--border-primary);
         display: flex;
+        
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }            
+        
     }
-
+    
     .contact-list-container {
         border-top: 0;
         display: flex;
         min-width: 40rem;
         flex-direction: row-reverse;
 
-        ul {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-        }
+    }
 
-        .contact-sidebar-container {
-            width: 100%;
-        }
+    .contact-sidebar-container {
+        width: 100%; /* esto es lo que elimina el borde de la pagina */
+        overflow-y: scroll;
     }
 
     .contact-container {
         padding: 0.5rem;
+        overflow-y: scroll;
     }
-
 }
