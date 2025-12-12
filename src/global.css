@@ -6,12 +6,12 @@
 
 body {
     background-color: var(--background-secondary);
-    height: 100%; /* 100 vw before */
+    height: auto; /* 100 vw before */
     width: 100%; /* overflow: hidden */
 }
 
 html {
-    height: 100%; /* 100 vw before */
+    height: auto; /* 100 vw before */
     width: 100%;
  /*Esto era para evitar el molesto scroll*/ /*overflow: hidden */
 }
@@ -32,6 +32,13 @@ html {
     display: none;
 }
 
+.contact-sidebar-container { /* pasar esto al CSS despues */
+     /* esto es lo que elimina el borde de la pagina */
+    overflow: hidden;
+    width: 100%;
+}
+
+
 @media (min-width:513px) {
 
     .contact-buttons {
@@ -45,7 +52,6 @@ html {
     .app-container,.messages-container {
         display: flex;
         width: 100%;
-        height: auto;
     }
 
     .whatsapp-footer {
@@ -64,18 +70,18 @@ html {
     .contact-list-container {
         border-top: 0;
         display: flex;
+        overflow-y: hidden;
         min-width: 40rem;
         flex-direction: row-reverse;
-
     }
 
     .contact-sidebar-container {
-        width: 100%; /* esto es lo que elimina el borde de la pagina */
-        overflow-y: scroll;
+     /* esto es lo que elimina el borde de la pagina */
+        overflow: hidden;
+        width: 100%;
     }
 
     .contact-container {
         padding: 0.5rem;
-        overflow-y: scroll;
     }
 }

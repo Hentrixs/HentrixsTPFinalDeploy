@@ -1,13 +1,12 @@
 .whatsapp-footer {
-    height: auto;
     display: flex;
     flex-direction: column;
     background-color: var(--background-message);
     border-top: 1px solid #292829;
 
     ul {
-        list-style-type: none;
         display: flex;
+        list-style-type: none;
         background-color: #1D1F1F;
         gap: 1.5rem;
         justify-content: center;

@@ -1,3 +1,6 @@
+1. Prioridad, Arreglar el responsive (como se ve y anda la pagina en el celular)
+en general solo falta arreglar el tema de que hay otro scroll de mierda y el tema de
+que el footer no se queda pegado correctamente
 
 1. 4 direcciones con el router (3 para los iconos de abajo y una mas para la 
 messagebox)
