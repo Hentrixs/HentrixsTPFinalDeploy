@@ -9,7 +9,13 @@ messagebox)
 4. Para la app de celular (menos de 768px) buscar agregar distintas direcciones
 para los 3 iconos del menu principal (eso no es relevante ahora mismo)
 
-5. Meter funcionalidad al boton groups y arreglar el color
+5. Meter funcionalidad al boton groups y arreglar el color, en general a todo el searchform, arreglar su position
+y el responsive
+
+6. Encontrar forma para meter el outlet (es decir el messagebox en el celular)
+existen multiples formas de hacer esto, se sugiere checkear con AI cuales opciones tengo
+en todo caso de ultima superponer el messagebox a todo lo demas y colocar un boton hacia atras (<-)
+para regresar a la contactList
 
 2. Arreglar tamanio de iconos hasta la resolucion 1080p, si es necesario agregar 
 otra media query (hecho, pero despues lo checkeare otra vez)
