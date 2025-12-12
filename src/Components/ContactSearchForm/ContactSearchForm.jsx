@@ -1,38 +1,42 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './ContactSearchForm.css'
+import { ContactSidebarContext } from '../../Contexts/ContactSideBarContext/ContactSideBarContext';
 
 export default function ContactSearchForm(props) {
+
+  const ContactContext = useContext(ContactSidebarContext);
+
   const [ButtonState,setButtonState] = useState([
     {
       id:1,
-      name:"all",
+      name:"All",
       name_value:true
     },
     {
       id:2,
-      name:"unread",
+      name:"Unread",
       name_value:false
     },
     {
       id:3,
-      name:"favourites",
+      name:"Favourites",
       name_value:false
     },
     {
       id:4,
-      name:"groups",
+      name:"Groups",
       name_value:false
     }
   ]);
 
   const handleClick = (id,name_request) => {
 
-    if (name_request === "unread") {
-      props.loadContactList("unread");
-    } else if (name_request === "all") {
-      props.loadContactList();
-    } else if (name_request === "favourites") {
-      props.loadContactList("favourites")
+    if (name_request === "Unread") {
+      ContactContext.loadContactList("Unread");
+    } else if (name_request === "All") {
+      ContactContext.loadContactList("All");
+    } else if (name_request === "Favourites") {
+      ContactContext.loadContactList("Favourites");
     }
 
     setButtonState((prev) => {
@@ -57,15 +61,16 @@ export default function ContactSearchForm(props) {
       <div className='contact-buttons'>
         {ButtonState.map((button) => {
           return(
-            <button key={button.id}
-            // Arreglar el color aca (black)
-            style={
-              { backgroundColor: button.name_value ? "#113528" : "inherit",
-                color: button.name_value ? "#D9FCB3" : "#A2A19F"
+            <button 
+              key={button.id}
+              style={
+                { 
+                  backgroundColor: button.name_value ? "#113528" : "inherit",
+                  color: button.name_value ? "#D9FCB3" : "#A2A19F"
+                }
               }
-            }
-            onClick={() => handleClick(button.id,button.name)} 
-            >{button.name}
+              onClick={() => handleClick(button.id,button.name)} 
+              >{button.name}
             </button>
           )
         })}

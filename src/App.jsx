@@ -37,9 +37,11 @@ function App (){
       }>
         <Route path="chat/:id" element={
           <MessageBoxContextProvider>
-            <div className="messages-container">
-              <MessageBox />
-            </div>
+            <ContactSidebarContextProvider>
+              <div className="messages-container">
+                <MessageBox />
+              </div>
+            </ContactSidebarContextProvider>
           </MessageBoxContextProvider>
         } />
       </Route>      

@@ -1,17 +1,17 @@
 import contact_data from "../data/contactData";
 
-export function getContactList (filter = "all"){
+export function getContactList(filter = "All") {
     /* En un futuro esta funcion haria la llamada al servidor */
     switch(filter) {
-        case "all":
+        case "All":
             return contact_data
             break
-        case "unread":
+        case "Unread":
             return contact_data.filter((contact) => {
                 return contact.contact_unseen_messages > 1 ;
             })
             break
-        case "favourites":
+        case "Favourites":
             return contact_data.filter((contact) => {
                 return contact.contact_favorite === true;
             })
@@ -19,7 +19,7 @@ export function getContactList (filter = "all"){
     }
 }
 
-export function getContactById (contact_id) {
+export function getContactById(contact_id) {
     for(const contact of contact_data){
         if(Number(contact.contact_id) === Number(contact_id)){
             return contact

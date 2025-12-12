@@ -8,19 +8,18 @@ function ContactSidebarContextProvider({children}) {
     const [contactState, setContactState] = useState([]);
     const [loadingContactsState, setLoadingContactState] = useState(true);
 
-    function loadContactList(filter = "all") {
+    function loadContactList(filter = "All") {
         setLoadingContactState(true)
 
         setTimeout(
             function () {
-                let contact_list; 
-
-                if (filter === "unread") {
-                    contact_list = getContactList("unread");
-                } else if (filter === "all") {
+                let contact_list
+                if (filter === "Unread") {
+                    contact_list = getContactList("Unread");
+                } else if (filter === "All") {
                     contact_list = getContactList();
-                } else if (filter === "favourites") {
-                    contact_list = getContactList("favourites");
+                } else if (filter === "Favourites") {
+                    contact_list = getContactList("Favourites");
                 }
 
                 setContactState(contact_list)
