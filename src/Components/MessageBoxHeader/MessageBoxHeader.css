@@ -1,9 +1,8 @@
 .messagebox-header {
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     
     display: flex;
     flex-direction: row;
-
     align-items: center;
     flex-wrap: wrap;
 
@@ -11,16 +10,17 @@
     justify-content: space-between;
 
     img {
-        border-radius: 200px;
-        height: 3rem;
+        border-radius: 400px;
+        height: 2.5rem;
         object-fit: cover;
-        width: 3rem;
+        width: 2.5rem;
     }
 }
 
 .messagebox-div-left {
     display: flex;
     gap: 0.5rem;
+    align-items: center;
     line-height: 1.5rem;
 
     div {
