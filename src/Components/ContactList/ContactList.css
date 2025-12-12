@@ -5,7 +5,7 @@
 
 .contact-container {
     overflow-y: scroll;   
-    height: 100vh; /* ok, el 100vh es clave */
+    height: 80vh; /* ok, el 100vh es clave */
 }
 
 .contact-container::-webkit-scrollbar {
