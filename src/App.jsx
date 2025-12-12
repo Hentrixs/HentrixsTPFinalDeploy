@@ -42,9 +42,7 @@ function App (){
             </div>
           </MessageBoxContextProvider>
         } />
-      </Route>
-      
-      
+      </Route>      
     </Routes>       
   )
 }

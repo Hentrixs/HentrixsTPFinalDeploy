@@ -1,7 +1,7 @@
 .contact-search-form {
     display: flex;
     flex-direction: column;
-    padding: 0rem 0.5rem;
+    padding: 0rem 1rem 0rem 0rem;
     border-radius: 100px;
 
     form {
@@ -9,6 +9,7 @@
         margin: 0.5rem 0rem;
         display: flex;
         align-items: center;
+        width: auto;
         justify-content: start;
         border-radius: 100px;
     }
@@ -42,13 +43,16 @@
 .contact-buttons {
     display: flex;
     gap: 1rem;
+    margin-left: 1rem;
     justify-content: center;
 
     button {
         border: 1px solid #2F2E2F;
         padding: 0.5rem;
         border-radius: 100px;
-        width: 5rem;
+        width: min-content;
+        padding: 0.5rem 1rem;
+        font-weight: 600;
         background-color: inherit;
     }
 

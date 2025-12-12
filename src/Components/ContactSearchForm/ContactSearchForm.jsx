@@ -59,7 +59,11 @@ export default function ContactSearchForm(props) {
           return(
             <button key={button.id}
             // Arreglar el color aca (black)
-            style={{backgroundColor: button.name_value ? "green" : "black"}}
+            style={
+              { backgroundColor: button.name_value ? "#113528" : "inherit",
+                color: button.name_value ? "#D9FCB3" : "#A2A19F"
+              }
+            }
             onClick={() => handleClick(button.id,button.name)} 
             >{button.name}
             </button>

@@ -1,10 +1,10 @@
+3. Meter la hora de cuando se mando el ultimo mensaje en el contactlist (eso no es relevante ahora mismo)
+
 1. Mejorar todo el tema del useContext() agregando un Outlet
 y 4 direcciones con el router (3 para los iconos de abajo y una mas para la 
 messagebox)
 
 1. Copiar el repo de este proyecto a otra carpeta, y en general hacer el deploy como mostro el profe en el video
-
-3. Meter la hora de cuando se mando el ultimo mensaje en el contactlist (eso no es relevante ahora mismo)
 
 4. Para la app de celular (menos de 768px) buscar agregar distintas direcciones
 para los 3 iconos del menu principal (eso no es relevante ahora mismo)
