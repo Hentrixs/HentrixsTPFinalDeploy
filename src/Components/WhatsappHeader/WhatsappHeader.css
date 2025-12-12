@@ -1,14 +1,17 @@
 
 header {
     display: flex;
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem;
     justify-content: space-between;
     align-content: center;
     height: auto;
 
     span {
         display: flex;
-        height: 2rem;
+        height: 1.7rem;
+        display: flex;
+        align-self: center;
+        width: max-content;
     }
 
     div {
@@ -20,10 +23,16 @@ header {
 
         span {
             display: flex;
+            height: 2.5rem;
+            width: 2.5rem;
             padding: 0.5rem 0.5rem;
             border-radius: 200px;
             justify-content: center;
             align-items: center;
+        }
+
+        svg {
+            height: 2rem;
         }
 
         span:hover {

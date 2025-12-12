@@ -35,9 +35,6 @@ html, body {
 }   
 
 @media (min-width:513px) {
-    .messages-container {
-        display: none;
-    }   
 
     .contact-buttons {
         justify-content: flex-start;
