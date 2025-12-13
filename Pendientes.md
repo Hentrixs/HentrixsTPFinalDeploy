@@ -17,6 +17,8 @@ para regresar a la contactList
 
 8. Meter algo para que cuando se estan cargando los contactos aparesca algo de fondo que tape la pag temporalmente
 
+9. Checkear responsive otra vez.
+
 2. Arreglar tamanio de iconos hasta la resolucion 1080p, si es necesario agregar 
 otra media query (hecho, pero despues lo checkeare otra vez)
 

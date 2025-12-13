@@ -40,6 +40,10 @@ aside {
 
 @media (min-width:1176px) {
 
+    aside {
+        height: auto;
+    }
+
     .app-container,.messages-container {
         display: flex;
         width: 100%;
@@ -49,8 +53,9 @@ aside {
         border: 0;
         border-right: 1px solid var(--border-primary);
         display: flex;
-        position: static;
-        flex-direction: column;
+        position: absolute;
+        top: 0;
+        flex-direction: row;
         width: auto;
         /*height: 100%;*/
 
@@ -70,7 +75,11 @@ aside {
         border-top: 0;
         display: flex;
         min-width: 40rem;
-        flex-direction: row-reverse;
+        flex-direction: column;
+
+        header,aside {
+            margin-left: 4rem;
+        }
     }
 
     .contact-sidebar-container {
