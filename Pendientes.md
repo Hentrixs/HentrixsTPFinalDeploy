@@ -1,8 +1,12 @@
+7. Arreglar el messagebox del celular (falta hacer que el messageboxfooter sea responsive
+[que se agranden los iconos cuando aumenta la RES] y que se vea el input (el form) en el celular, 
+basicamente)
+
 7. Arreglar el messagebox para PC
 
 8. Arreglar los 3 iconos que estan al lado del nombre del contact_name del messagebox footer
 
-1. Hacer las otras 3 direcciones faltantes
+1. Hacer el contenido que va dentro de las 3 rutas faltantes que no son messagebox
 
 1. Copiar el repo de este proyecto a otra carpeta, y en general hacer el deploy como mostro el profe en el video
 
