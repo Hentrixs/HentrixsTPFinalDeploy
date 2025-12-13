@@ -26,10 +26,10 @@ function App (){
                   </ContactSidebarContextProvider>
                   <WhatsappFooter />
             </div>
-            <div className="messages-container"> {/* Aca tengo que ver como chota hacer para que esto se renderize
+            <> {/* Aca tengo que ver como chota hacer para que esto se renderize
             Solamente por encima de los 768px (MessagesScreen) */}
               <Outlet />
-            </div>
+            </>
           </div>
         </MessageBoxContextProvider>
       }>

@@ -23,14 +23,6 @@ body {
     overflow: hidden;
 }
 
-.messages-container {
-    display: inline-flex;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-}
-
 aside {
     height: 87vh;
 }
