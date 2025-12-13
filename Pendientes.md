@@ -1,3 +1,7 @@
+6. Encontrar forma para meter el outlet (es decir el messagebox en el celular)
+existen multiples formas de hacer esto, se sugiere checkear con AI cuales opciones tengo
+en todo caso de ultima superponer el messagebox a todo lo demas y colocar un boton hacia atras (<-)
+para regresar a la contactList
 
 1. 4 direcciones con el router (3 para los iconos de abajo y una mas para la 
 messagebox)
@@ -7,11 +11,6 @@ messagebox)
 3. Meter la hora de cuando se mando el ultimo mensaje en el contactlist (eso no es relevante ahora mismo)
 
 5. Meter funcionalidad al boton groups, en general a todo el searchform, arreglar su position y el responsive
-
-6. Encontrar forma para meter el outlet (es decir el messagebox en el celular)
-existen multiples formas de hacer esto, se sugiere checkear con AI cuales opciones tengo
-en todo caso de ultima superponer el messagebox a todo lo demas y colocar un boton hacia atras (<-)
-para regresar a la contactList
 
 7. "Meter Download WhatsApp for Windows" por default al cargar pagina
 
