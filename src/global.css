@@ -15,7 +15,6 @@ html {
     height: auto; /* 100 vw before */
     width: 100%;
     overflow: hidden;
- /*Esto era para evitar el molesto scroll*/ /*overflow: hidden */
 }
 
 :root {
@@ -59,7 +58,11 @@ html {
         border: 0;
         border-right: 1px solid var(--border-primary);
         display: flex;
-        
+        position: static;
+        flex-direction: column;
+        width: auto;
+        height: 100%;
+
         ul {
             display: flex;
             flex-direction: column;
@@ -71,15 +74,14 @@ html {
     .contact-list-container {
         border-top: 0;
         display: flex;
-        overflow-y: hidden;
         min-width: 40rem;
         flex-direction: row-reverse;
     }
 
     .contact-sidebar-container {
      /* esto es lo que elimina el borde de la pagina */
-        overflow: hidden;
         width: 100%;
+        /*overflow: hidden;*/
     }
 
     .contact-container {
