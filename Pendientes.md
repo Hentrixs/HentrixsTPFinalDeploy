@@ -1,10 +1,8 @@
-6. Encontrar forma para meter el outlet (es decir el messagebox en el celular)
-existen multiples formas de hacer esto, se sugiere checkear con AI cuales opciones tengo
-en todo caso de ultima superponer el messagebox a todo lo demas y colocar un boton hacia atras (<-)
-para regresar a la contactList
+7. Arreglar el messagebox para PC
 
-1. 4 direcciones con el router (3 para los iconos de abajo y una mas para la 
-messagebox)
+8. Arreglar los 3 iconos que estan al lado del nombre del contact_name del messagebox footer
+
+1. Hacer las otras 3 direcciones faltantes
 
 1. Copiar el repo de este proyecto a otra carpeta, y en general hacer el deploy como mostro el profe en el video
 
