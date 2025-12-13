@@ -3,6 +3,7 @@
     flex-direction: column;
     padding: 0rem 1rem 0.2rem 0rem;
     border-radius: 100px;
+    position: sticky;
 
     form {
         background-color: inherit;

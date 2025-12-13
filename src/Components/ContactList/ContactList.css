@@ -4,8 +4,10 @@
 }
 
 .contact-container {
+    display: flex;
+    flex-direction: column;
     overflow-y: scroll;   
-    height: 75vh; /* ok, el 100vh es clave */
+    height: 100vh; /* ok, el 100vh es clave */
 }
 
 .contact-container::-webkit-scrollbar {

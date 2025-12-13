@@ -8,11 +8,13 @@ body {
     background-color: var(--background-secondary);
     height: auto; /* 100 vw before */
     width: 100%; /* overflow: hidden */
+    overflow: hidden;
 }
 
 html {
     height: auto; /* 100 vw before */
     width: 100%;
+    overflow: hidden;
  /*Esto era para evitar el molesto scroll*/ /*overflow: hidden */
 }
 
@@ -37,7 +39,6 @@ html {
     overflow: hidden;
     width: 100%;
 }
-
 
 @media (min-width:513px) {
 
