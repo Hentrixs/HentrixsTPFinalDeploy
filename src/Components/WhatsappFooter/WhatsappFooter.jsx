@@ -5,7 +5,7 @@ import { Link } from 'react-router'
 export default function WhatsappFooter
 () {
   return (
-    <div className='whatsapp-footer'>
+    <footer className='whatsapp-footer'>
         <ul>
             <li>
               <Link to={"/"}>
@@ -23,6 +23,6 @@ export default function WhatsappFooter
               </Link>
             </li>
         </ul>
-    </div>
+    </footer>
   )
 }

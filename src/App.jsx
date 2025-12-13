@@ -20,13 +20,11 @@ function App (){
         <MessageBoxContextProvider>
           <div className="app-container">
             <div className="contact-list-container">
-                <div className="contact-sidebar-container">
                   <WhatsAppHeader />
                   <ContactSidebarContextProvider>
-                    <ContactSidebar />
+                    <ContactSidebar />                    
                   </ContactSidebarContextProvider>
-                </div>
-                <WhatsappFooter />
+                  <WhatsappFooter />
             </div>
             <div className="messages-container"> {/* Aca tengo que ver como chota hacer para que esto se renderize
             Solamente por encima de los 768px (MessagesScreen) */}

@@ -7,14 +7,8 @@
 body {
     background-color: var(--background-secondary);
     height: auto; /* 100 vw before */
-    width: 100%; /* overflow: hidden */
-    overflow: hidden;
-}
-
-html {
-    height: auto; /* 100 vw before */
-    width: 100%;
-    overflow: hidden;
+    width: 100%; 
+    overflow: visible; 
 }
 
 :root {
@@ -24,19 +18,13 @@ html {
     --background-message: #252627;
 }
 
-.contact-sidebar-container {
-    border-right: 1px solid #2F2E2F;
-    height: 100vh;
-}
-
 .messages-container {
     display: none;
 }
 
-.contact-sidebar-container { /* pasar esto al CSS despues */
-     /* esto es lo que elimina el borde de la pagina */
-    overflow: hidden;
-    width: 100%;
+aside {
+    height: 87vh;
+    padding: 1rem 0rem;
 }
 
 @media (min-width:513px) {
@@ -61,7 +49,7 @@ html {
         position: static;
         flex-direction: column;
         width: auto;
-        height: 100%;
+        /*height: 100%;*/
 
         ul {
             display: flex;
@@ -70,7 +58,11 @@ html {
         }            
         
     }
-    
+
+    .contact-container {
+        height: 80vh;
+    }
+
     .contact-list-container {
         border-top: 0;
         display: flex;
