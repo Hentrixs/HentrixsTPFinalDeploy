@@ -27,6 +27,16 @@
         display: flex;
         flex-direction: column;
     }
+
+    button {
+        background: none;
+        border: none;
+    }
+
+    svg {
+        height: 2rem;
+        width: 2rem;
+    }
 }
 
 .messagebox-div-right {
