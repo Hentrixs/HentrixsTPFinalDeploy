@@ -2,11 +2,17 @@
 
 Meter la hora de cuando se mando el ultimo mensaje en el contactlist (eso no es relevante ahora mismo)
 
+Meter style y position a la burbuja de "Unseen" para que este al costado derecho del .subdiv 
+
 Hacer el contenido que va dentro de las 3 rutas faltantes que no son messagebox
 
 Copiar el repo de este proyecto a otra carpeta, y en general hacer el deploy como mostro el profe en el video
 
-Meter funcionalidad al boton groups, en general a todo el searchform, arreglar su position y el responsive
+Meter funcionalidad al boton groups
+
+Meter funcionalidad al form del searchform (que sirva para buscar contactos)
+
+Meter funcionalidad al form del messagebox (que sirva para agregar mensajes)
 
 "Meter Download WhatsApp for Windows" por default al cargar pagina
 
