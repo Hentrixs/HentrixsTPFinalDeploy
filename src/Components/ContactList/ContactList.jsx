@@ -34,16 +34,23 @@ export default function ContactList() {
                             <Link to={`/chat/${contact.contact_id}`} key={contact.contact_id} className='Link'>
                                 <div className='subdiv' onClick={() => {handleClick(contact.contact_id)}}>
                                     <div>
-                                        <img className='contact-avatar' src={contact.contact_avatar} alt={contact.contact_name} />
+                                        <div>
+                                            <img className='contact-avatar' src={contact.contact_avatar} alt={contact.contact_name} />
+                                        </div>
+                                        <div className='last-message'>
+                                            <h3>{contact.contact_name}</h3>                                
+                                            <p>{contact.last_message_content}</p>
+                                            {/* <p>{contact.last_message_created_at}</p> */}                                       
+                                        </div>                                        
                                     </div>
-                                    <div className='last-message'>
-                                        <h3>{contact.contact_name}</h3>                                
-                                        <p>{contact.last_message_content}</p>
-                                        {/* <p>{contact.last_message_created_at}</p> */}
-                                        {
-                                            contact.contact_unseen_messages > 0 &&
-                                            <span>{contact.contact_unseen_messages}</span>
-                                        }                                             
+                                    <div className='last-time'>
+                                        <p>last time</p>
+                                        <div>
+                                            {
+                                                contact.contact_unseen_messages > 0 &&
+                                                <span>{contact.contact_unseen_messages}</span>
+                                            } 
+                                        </div>                                             
                                     </div>
                                 </div>
                             </Link>
