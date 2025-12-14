@@ -32,7 +32,22 @@ aside {
     .contact-buttons {
         justify-content: flex-start;
     }   
-    
+
+    .messagebox-header .messagebox-div-right {
+        gap: 1.5rem;
+    }
+
+    .messagebox-header .messagebox-div-right span {
+        height: 2.5rem;
+        width: 2.5rem;
+
+        svg {
+            height: 1.2rem;
+            width: 1.5rem;
+        }
+
+    }
+
 }
 
 @media (min-width:1176px) {
@@ -41,11 +56,10 @@ aside {
         height: auto;
     }
 
-    .app-container,.messages-container {
+    .app-container {
         display: flex;
-        width: 100%;
     }
-
+    
     .whatsapp-footer {
         border: 0;
         border-right: 1px solid var(--border-primary);
@@ -86,5 +100,11 @@ aside {
 
     .contact-container {
         padding: 0.5rem;
+    }
+
+    .messagebox-container {
+        display: flex; 
+        position: static !important; /* esto no se porque no andaba sin el !important y lo tuve que dejar asi :( */
+        width: auto;
     }
 }

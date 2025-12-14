@@ -1,8 +1,9 @@
+
 7. Arreglar el messagebox del celular (falta hacer que el messageboxfooter sea responsive
 [que se agranden los iconos cuando aumenta la RES] y que se vea el input (el form) en el celular, 
 basicamente)
 
-7. Arreglar el messagebox para PC
+3. Meter la hora de cuando se mando el ultimo mensaje en el contactlist (eso no es relevante ahora mismo)
 
 8. Arreglar los 3 iconos que estan al lado del nombre del contact_name del messagebox footer
 
@@ -10,7 +11,7 @@ basicamente)
 
 1. Copiar el repo de este proyecto a otra carpeta, y en general hacer el deploy como mostro el profe en el video
 
-3. Meter la hora de cuando se mando el ultimo mensaje en el contactlist (eso no es relevante ahora mismo)
+7. Arreglar el messagebox para PC (tratar de arreglarlo sin el !important)
 
 5. Meter funcionalidad al boton groups, en general a todo el searchform, arreglar su position y el responsive
 
