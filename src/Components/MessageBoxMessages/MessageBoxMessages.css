@@ -22,4 +22,12 @@
         max-width: 25rem;
         border-radius: 5px;
     }
+
+    span {
+        position: relative;
+        bottom: -10px;
+        right: -2px;
+        color: #9D9E9E;
+        font-size: 0.7rem;
+    }
 }
