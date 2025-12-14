@@ -1,6 +1,5 @@
 
-7. Arreglar el messagebox del celular (falta hacer que el messageboxfooter sea responsive
-[que se agranden los iconos cuando aumenta la RES] y que se vea el input (el form) en el celular, 
+7. Arreglar el messagebox del celular (que se vea el input (el form) en el celular, 
 basicamente)
 
 3. Meter la hora de cuando se mando el ultimo mensaje en el contactlist (eso no es relevante ahora mismo)
