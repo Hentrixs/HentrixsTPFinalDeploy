@@ -18,7 +18,7 @@ body {
     --background-message: #252627;
 }
 
-.app-container {
+.app-container,.contact-list-container { /* only .app-container before */
     height: 100vh;
     overflow: hidden;
 }
