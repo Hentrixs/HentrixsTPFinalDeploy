@@ -106,9 +106,18 @@ aside {
         padding: 0.5rem;
     }
 
+    /*
     .messagebox-container {
         display: flex; 
-        position: static !important; /* esto no se porque no andaba sin el !important y lo tuve que dejar asi :( */
+        position: static !important; /* esto no se porque no andaba sin el !important y 
+        lo tuve que dejar asi :( 
         width: auto;
+    }
+    */
+    
+    .app-container .messagebox-container {
+        display: flex;
+        position: static;
+        width: 100%;
     }
 }

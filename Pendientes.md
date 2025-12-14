@@ -1,34 +1,30 @@
+# PRIORIDADES IMPORTANTES
 
-7. Arreglar el messagebox del celular (que se vea el input (el form) en el celular, 
-basicamente)
+Meter la hora de cuando se mando el ultimo mensaje en el contactlist (eso no es relevante ahora mismo)
 
-3. Meter la hora de cuando se mando el ultimo mensaje en el contactlist (eso no es relevante ahora mismo)
+Hacer el contenido que va dentro de las 3 rutas faltantes que no son messagebox
 
-8. Arreglar los 3 iconos que estan al lado del nombre del contact_name del messagebox footer
+Copiar el repo de este proyecto a otra carpeta, y en general hacer el deploy como mostro el profe en el video
 
-1. Hacer el contenido que va dentro de las 3 rutas faltantes que no son messagebox
+Meter funcionalidad al boton groups, en general a todo el searchform, arreglar su position y el responsive
 
-1. Copiar el repo de este proyecto a otra carpeta, y en general hacer el deploy como mostro el profe en el video
+"Meter Download WhatsApp for Windows" por default al cargar pagina
 
-7. Arreglar el messagebox para PC (tratar de arreglarlo sin el !important)
+Meter algo para que cuando se estan cargando los contactos aparesca algo de fondo que tape la pag temporalmente
 
-5. Meter funcionalidad al boton groups, en general a todo el searchform, arreglar su position y el responsive
+# PRIORIDADES SECUNDARIAS
 
-7. "Meter Download WhatsApp for Windows" por default al cargar pagina
+Checkear responsive otra vez.
 
-8. Meter algo para que cuando se estan cargando los contactos aparesca algo de fondo que tape la pag temporalmente
-
-9. Checkear responsive otra vez.
-
-2. Arreglar tamanio de iconos hasta la resolucion 1080p, si es necesario agregar 
+Arreglar tamanio de iconos hasta la resolucion 1080p, si es necesario agregar 
 otra media query (hecho, pero despues lo checkeare otra vez)
 
-10. Ajustar el tamanio de los objetos
+Ajustar el tamanio de los objetos
 
-13. al messagebox meterle barra deslizante.
+al messagebox meterle barra deslizante.
 
-16. Hacer funcional la searchbar
+Hacer funcional la searchbar
 
-18. Buscar otros ejemplos de copias de Whatsapp y inspirarse para agregar mas funcionalidad
+Buscar otros ejemplos de copias de Whatsapp y inspirarse para agregar mas funcionalidad
 
-20. Mejorar detalles del contact_list y del messagebox
+Mejorar detalles del contact_list y del messagebox
