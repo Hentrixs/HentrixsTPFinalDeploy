@@ -33,6 +33,10 @@ aside {
         justify-content: flex-start;
     }   
 
+    .messagebox-header .messagebox-div-left div p {
+        font-size: 1rem;
+    }
+
     .messagebox-header .messagebox-div-right {
         gap: 1.5rem;
     }
