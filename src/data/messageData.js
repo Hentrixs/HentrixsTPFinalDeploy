@@ -175,8 +175,11 @@ export const messageData = [
     messages: [
       { user2: "Mañana es nuestro aniversario" },
       { send_by_me: "¡No puedo creer que ya pasó un año!" },
-      { user2: "El tiempo vuela" },
-      { send_by_me: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." }
+      { user2: "El tiempo vuela", 
+        time: `
+        ${new Date("October 13, 2014 11:13:00").getHours()}:${new Date("October 13, 2014 11:13:00").getMinutes()}
+        `
+      },
     ]
   }
 ];

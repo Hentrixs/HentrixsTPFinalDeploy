@@ -17,7 +17,7 @@ export default function MessageBoxMessages() { // Aca debo hacer que funcione po
                 style={message.send_by_me ? 
                     {backgroundColor: "#154D36",alignSelf:'end'} : 
                     {backgroundColor: "#252726",alignSelf:'start'}}
-            >{message.send_by_me || message.user2}</p>
+            >{message.send_by_me || message.user2} <span>{message.time || "(t placeholder)"}</span></p>
         );
     })}
     
