@@ -46,6 +46,10 @@
         display: flex;
         column-gap: 0.5rem;
         line-height: 1.5rem;
+
+        p {
+            color: #ABACA8;
+        }
     } 
 
     .last-time {
