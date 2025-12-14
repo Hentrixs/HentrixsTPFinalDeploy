@@ -9,7 +9,7 @@ const contact_data = [
         last_message_content: 'Que tal?',
         last_message_state: 'SEEN',
         last_message_created_at: new Date()
-    },    
+    },
     {
         contact_id: 2,
         contact_name: 'Maria',

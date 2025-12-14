@@ -44,7 +44,8 @@ export default function ContactList() {
                                         </div>                                        
                                     </div>
                                     <div className='last-time'>
-                                        <p>{contact.last_message_created_at && "last_message"}</p>
+                                        {/* <p>{contact.last_message_created_at || "last_message" }</p> */}
+                                        <p>last_message</p>
                                         <div>
                                             {
                                                 contact.contact_unseen_messages > 0 &&
