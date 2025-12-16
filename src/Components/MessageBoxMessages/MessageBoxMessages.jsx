@@ -9,13 +9,17 @@ export default function MessageBoxMessages() {
 
     const { id } = useParams();
     const contact = messageService(Number(id));
-    const { MessageBoxMessages, setMessageBoxMessages } = useContext(MessageBoxContext);
+
+    const {
+        MessageBoxMessages,
+        setMessageBoxMessages,
+        MessageBoxTextAndAvatar
+    } = useContext(MessageBoxContext);
 
     useEffect(() => {
         setMessageBoxMessages(contact.messages);
-
         console.log("use effect funcionando");
-    }, []);
+    }, [id]);
 
     const loadmessages = () => {
         return MessageBoxMessages.map((message, index) => {

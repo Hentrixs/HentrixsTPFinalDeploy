@@ -7,7 +7,7 @@ import { Link, Outlet } from 'react-router';
 export default function ContactList() {
 
     const { contactState, loadingContactsState } = useContext(ContactSidebarContext);
-    const { setMessageBoxText } = useContext(MessageBoxContext)
+    const { setMessageBoxText, setMessageBoxMessages } = useContext(MessageBoxContext)
 
     const handleClick = (id) => {
         setMessageBoxText(id);
