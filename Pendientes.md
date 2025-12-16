@@ -6,11 +6,12 @@ Hacer el contenido que va dentro de las 3 rutas faltantes que no son messagebox
 
 Copiar el repo de este proyecto a otra carpeta, y en general hacer el deploy como mostro el profe en el video
 
+Mejorar el form del messagebox para que al cambiar de contacto
+no se borren los mensajes
+
 Meter funcionalidad al boton groups
 
 Meter funcionalidad al form del searchform (que sirva para buscar contactos)
-
-Meter funcionalidad al form del messagebox (que sirva para agregar mensajes)
 
 Meter Download WhatsApp for Windows" por default al cargar pagina
 

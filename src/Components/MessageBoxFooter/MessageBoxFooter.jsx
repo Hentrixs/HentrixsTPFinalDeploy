@@ -20,10 +20,19 @@ export default function MessageBoxFooter() {
       voy a tratar de crear un state 
       y usar un useEffect() en messageboxmessages para esto
     */
+
+    const obtenerHoraActual = () => {
+      const now = new Date();
+      const hours = now.getHours().toString().padStart(2, '0');
+      const minutes = now.getMinutes().toString().padStart(2, '0');
+
+      return `${hours}:${minutes}`;
+    }
+
     const nuevoMensaje = {
       message: message,
       send_by_me: message,
-      time: Date.now(),
+      time: obtenerHoraActual(),
     };
 
     setMessageBoxMessages((prev) => {
