@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import './ContactList.css'
 import { MessageBoxContext } from '../../Contexts/MessageBoxContext/MessageBoxContext';
-import { ContactSidebarContext } from '../../Contexts/ContactSideBarContext/ContactSideBarContext';
+import { ContactSidebarContext } from '../../Contexts/ContactSidebarContext/ContactSidebarContext';
 import { Link, Outlet } from 'react-router';
 
 export default function ContactList() {

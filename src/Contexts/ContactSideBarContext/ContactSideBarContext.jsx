@@ -23,16 +23,6 @@ function ContactSidebarContextProvider({ children }) {
         setLoadingContactState(false)
     };
 
-    const obtenerContactos = (contactId, newmessage) => {
-        const contact = contactState.map((contact) => {
-            contact.id === contactId ?
-                [...contact, contact.last_message_content = newmessage]
-                :
-                contact
-        })
-        setContactState(contact);
-    };
-
     const providerValues = {
         contactState,
         setContactState,

@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import './ContactSearchForm.css'
-import { ContactSidebarContext } from '../../Contexts/ContactSideBarContext/ContactSideBarContext';
+import { ContactSidebarContext } from '../../Contexts/ContactSidebarContext/ContactSidebarContext';
 
 export default function ContactSearchForm(props) {
 

@@ -1,15 +1,14 @@
-import sendMessageService from '../../services/messageService';
 import messageService from '../../services/messageService';
 import './MessageBoxMessages.css'
 import { useParams } from 'react-router';
 import { useEffect, useContext } from 'react';
 import { MessageBoxContext } from '../../Contexts/MessageBoxContext/MessageBoxContext';
-import { addMessageToChat } from '../../services/messageService';
+import { ContactSidebarContext } from '../../Contexts/ContactSidebarContext/ContactSidebarContext';
 
 export default function MessageBoxMessages() {
 
     const { id } = useParams();
-    const contact = messageService(Number(id));
+    const { loadContactList } = useContext(ContactSidebarContext);
 
     const {
         MessageBoxMessages,
@@ -17,9 +16,13 @@ export default function MessageBoxMessages() {
         MessageBoxTextAndAvatar
     } = useContext(MessageBoxContext);
 
+    const contact = messageService(Number(id));
+
+
     useEffect(() => {
         setMessageBoxMessages([...contact.messages]);
         console.log("use effect funcionando");
+        loadContactList();
     }, [id]);
 
     const loadmessages = () => {

@@ -7,10 +7,10 @@ import './ContactSidebar.css';
 import { useContext, useEffect } from 'react'
 import ContactSearchForm from '../ContactSearchForm/ContactSearchForm'
 import ContactList from '../ContactList/ContactList'
-import { ContactSidebarContext } from '../../Contexts/ContactSideBarContext/ContactSideBarContext';
+import { ContactSidebarContext } from '../../Contexts/ContactSidebarContext/ContactSidebarContext';
 
 export default function ContactSidebar() {
-    
+
     const {
         contactState,
         setContactState,
@@ -19,15 +19,15 @@ export default function ContactSidebar() {
         loadContactList
     } = useContext(ContactSidebarContext);
 
-    useEffect (
+    useEffect(
         loadContactList,
         []
     );
-    
+
     return (
         <aside>
-                <ContactSearchForm loadContactList={loadContactList}/>
-                {/*<a>Crear contacto</a>*/}
+            <ContactSearchForm loadContactList={loadContactList} />
+            {/*<a>Crear contacto</a>*/}
             <ContactList />
         </aside>
     );
