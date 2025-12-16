@@ -21,7 +21,7 @@ export default function MessageBoxMessages() {
 
     useEffect(() => {
         setMessageBoxMessages([...contact.messages]);
-        console.log("use effect funcionando");
+        console.log("pre loading contact_list");
         loadContactList();
     }, [id]);
 
