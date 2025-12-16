@@ -43,7 +43,7 @@ export default function ContactList() {
                                         </div>
                                     </div>
                                     <div className='last-time'>
-                                        <p>{"last_message_placeholder"}</p>
+                                        <p>{contact.last_message_time}</p>
                                         <div>
                                             {
                                                 contact.contact_unseen_messages > 0 &&
