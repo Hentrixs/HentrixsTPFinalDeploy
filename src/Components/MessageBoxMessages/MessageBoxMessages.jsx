@@ -8,16 +8,11 @@ import { MessageBoxContext } from '../../Contexts/MessageBoxContext/MessageBoxCo
 export default function MessageBoxMessages() {
 
     const { id } = useParams();
-    /*const contact = messageService(Number(id));*/
+    const contact = messageService(Number(id));
     const { MessageBoxMessages, setMessageBoxMessages } = useContext(MessageBoxContext);
 
     useEffect(() => {
-        setMessageBoxMessages(
-            [
-                { send_by_me: false, user1: "hola", time: "12:00" },
-                { send_by_me: true, user2: "hola", time: "12:00" }
-            ]
-        );
+        setMessageBoxMessages(contact.messages);
 
         console.log("use effect funcionando");
     }, []);
@@ -30,7 +25,7 @@ export default function MessageBoxMessages() {
                     style={message.send_by_me ?
                         { backgroundColor: "#154D36", alignSelf: 'end' } :
                         { backgroundColor: "#252726", alignSelf: 'start' }}
-                >{message.user1 || message.user2} <span>{message.time || "(t placeholder)"}</span></p>
+                >{message.send_by_me || message.user2} <span>{message.time || "(t placeholder)"}</span></p>
             );
         })
     }

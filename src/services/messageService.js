@@ -10,10 +10,8 @@ export function sendMessageService(chatid, message) {
 };
 
 export default function messageService(id) {
-
     return messageData.find((message) => {
         return message.id === id;
     })
-
 }
 
