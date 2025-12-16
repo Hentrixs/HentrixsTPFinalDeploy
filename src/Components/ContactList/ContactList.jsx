@@ -6,20 +6,20 @@ import { Link, Outlet } from 'react-router';
 
 export default function ContactList() {
 
-    const {contactState,loadingContactsState} = useContext(ContactSidebarContext);
-    const {setMessageBoxText} = useContext(MessageBoxContext)
+    const { contactState, loadingContactsState } = useContext(ContactSidebarContext);
+    const { setMessageBoxText } = useContext(MessageBoxContext)
 
     const handleClick = (id) => {
         setMessageBoxText(id);
-    } 
-    
-    if(loadingContactsState) {
+    }
+
+    if (loadingContactsState) {
         return (
             <div>Cargando contactos...</div>
         )
     }
 
-    if(contactState.length === 0) {
+    if (contactState.length === 0) {
         return (
             <div>No hay contactos</div>
         )
@@ -29,19 +29,19 @@ export default function ContactList() {
         <div className='contact-container'>
             {
                 contactState.map(
-                    function (contact){
+                    function (contact) {
                         return (
                             <Link to={`/chat/${contact.contact_id}`} key={contact.contact_id} className='Link'>
-                                <div className='subdiv' onClick={() => {handleClick(contact.contact_id)}}>
+                                <div className='subdiv' onClick={() => { handleClick(contact.contact_id) }}>
                                     <div>
                                         <div>
                                             <img className='contact-avatar' src={contact.contact_avatar} alt={contact.contact_name} />
                                         </div>
                                         <div className='last-message'>
-                                            <h3>{contact.contact_name}</h3>                                
+                                            <h3>{contact.contact_name}</h3>
                                             <p>{contact.last_message_content}</p>
-                                            {/* <p>{contact.last_message_created_at}</p> */}                                       
-                                        </div>                                        
+                                            {/* <p>{contact.last_message_created_at}</p> */}
+                                        </div>
                                     </div>
                                     <div className='last-time'>
                                         {/* <p>{contact.last_message_created_at || "last_message" }</p> */}
@@ -49,9 +49,9 @@ export default function ContactList() {
                                         <div>
                                             {
                                                 contact.contact_unseen_messages > 0 &&
-                                                <span>{contact.contact_unseen_messages}</span>
-                                            } 
-                                        </div>                                             
+                                                <span className='unseen-badge'>{contact.contact_unseen_messages}</span>
+                                            }
+                                        </div>
                                     </div>
                                 </div>
                             </Link>

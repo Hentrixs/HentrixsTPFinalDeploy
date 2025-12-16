@@ -32,9 +32,7 @@ function App() {
         </MessageBoxContextProvider>
       }>
         <Route path="chat/:id" element={
-          <MessageBoxContextProvider>
-            <MessageBox />
-          </MessageBoxContextProvider>
+          <MessageBox />
         } />
       </Route>
       <Route path="/status" element={

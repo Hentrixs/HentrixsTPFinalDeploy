@@ -2,8 +2,6 @@
 
 Meter la hora de cuando se mando el ultimo mensaje en el contactlist (eso no es relevante ahora mismo)
 
-Meter style y position a la burbuja de "Unseen" para que este al costado derecho del .subdiv 
-
 Hacer el contenido que va dentro de las 3 rutas faltantes que no son messagebox
 
 Copiar el repo de este proyecto a otra carpeta, y en general hacer el deploy como mostro el profe en el video
@@ -19,6 +17,8 @@ Meter Download WhatsApp for Windows" por default al cargar pagina
 Meter algo para que cuando se estan cargando los contactos aparesca algo de fondo que tape la pag temporalmente
 
 # PRIORIDADES SECUNDARIAS
+
+Mejorar la burbuja de unseen
 
 Checkear responsive otra vez.
 

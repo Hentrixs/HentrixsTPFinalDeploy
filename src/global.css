@@ -6,9 +6,10 @@
 
 body {
     background-color: var(--background-secondary);
-    height: 100%; /* 100 vw before */
-    width: 100%; 
-    overflow: hidden; 
+    height: 100%;
+    /* 100 vw before */
+    width: 100%;
+    overflow: hidden;
 }
 
 :root {
@@ -18,9 +19,15 @@ body {
     --background-message: #252627;
 }
 
-.app-container,.contact-list-container { /* only .app-container before */
+.app-container,
+.contact-list-container {
+    /* only .app-container before */
     height: 100vh;
     overflow: hidden;
+}
+
+.contact-list-container {
+    border-right: 1px solid var(--border-primary);
 }
 
 aside {
@@ -31,7 +38,7 @@ aside {
 
     .contact-buttons {
         justify-content: flex-start;
-    }   
+    }
 
     .messagebox-header .messagebox-div-left div p {
         font-size: 1rem;
@@ -63,7 +70,7 @@ aside {
     .app-container {
         display: flex;
     }
-    
+
     .whatsapp-footer {
         border: 0;
         border-right: 1px solid var(--border-primary);
@@ -77,8 +84,8 @@ aside {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-        }            
-        
+        }
+
     }
 
     .contact-container {
@@ -91,13 +98,14 @@ aside {
         min-width: 40rem;
         flex-direction: column;
 
-        header,aside {
+        header,
+        aside {
             margin-left: 4rem;
         }
     }
 
     .contact-sidebar-container {
-     /* esto es lo que elimina el borde de la pagina */
+        /* esto es lo que elimina el borde de la pagina */
         width: 100%;
         /*overflow: hidden;*/
     }
@@ -114,7 +122,7 @@ aside {
         width: auto;
     }
     */
-    
+
     .app-container .messagebox-container {
         display: flex;
         position: static;

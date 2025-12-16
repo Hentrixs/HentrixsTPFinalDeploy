@@ -3,31 +3,26 @@ import { getContactList } from "../../services/contactService";
 
 export const ContactSidebarContext = createContext();
 
-function ContactSidebarContextProvider({children}) {
+function ContactSidebarContextProvider({ children }) {
 
     const [contactState, setContactState] = useState([]);
     const [loadingContactsState, setLoadingContactState] = useState(true);
 
     function loadContactList(filter = "All") {
         setLoadingContactState(true)
-
         setTimeout(
             function () {
                 let contact_list
-                if (filter === "Unread") {
-                    contact_list = getContactList("Unread");
-                } else if (filter === "All") {
-                    contact_list = getContactList();
-                } else if (filter === "Favourites") {
-                    contact_list = getContactList("Favourites");
-                }
+                filter === "All" ?
+                    contact_list = getContactList() :
+                    contact_list = getContactList(filter)
 
                 setContactState(contact_list)
                 setLoadingContactState(false)
             },
             2000
-        );  
-    };    
+        );
+    };
 
     const providerValues = {
         contactState,
@@ -36,8 +31,8 @@ function ContactSidebarContextProvider({children}) {
         loadingContactsState,
         setLoadingContactState
     };
-    
-    return(
+
+    return (
         <ContactSidebarContext.Provider value={providerValues}>
             {children}
         </ContactSidebarContext.Provider>
