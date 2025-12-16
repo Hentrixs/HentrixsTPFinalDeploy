@@ -14,13 +14,15 @@ Meter funcionalidad al form del searchform (que sirva para buscar contactos)
 
 Meter funcionalidad al form del messagebox (que sirva para agregar mensajes)
 
-"Meter Download WhatsApp for Windows" por default al cargar pagina
+Meter Download WhatsApp for Windows" por default al cargar pagina
 
 Meter algo para que cuando se estan cargando los contactos aparesca algo de fondo que tape la pag temporalmente
 
 # PRIORIDADES SECUNDARIAS
 
 Checkear responsive otra vez.
+
+Buscar un favicon mejor
 
 Arreglar tamanio de iconos hasta la resolucion 1080p, si es necesario agregar 
 otra media query (hecho, pero despues lo checkeare otra vez)
