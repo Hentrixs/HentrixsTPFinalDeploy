@@ -11,20 +11,16 @@ function ContactSidebarContextProvider({ children }) {
 
     function loadContactList(filter = "All") {
         setLoadingContactState(true)
-        setTimeout(
-            function () {
-                let contact_list
-                filter === "All" ?
-                    contact_list = getContactList() :
-                    contact_list = getContactList(filter)
+        let contact_list
 
-                contact_list = getContactsWithMessages(contact_list);
-                console.log(contact_list);
-                setContactState(contact_list)
-                setLoadingContactState(false)
-            },
-            2000
-        );
+        filter === "All" ?
+            contact_list = getContactList() :
+            contact_list = getContactList(filter)
+
+        contact_list = getContactsWithMessages(contact_list);
+        console.log(contact_list);
+        setContactState(contact_list)
+        setLoadingContactState(false)
     };
 
     const obtenerContactos = (contactId, newmessage) => {
