@@ -10,7 +10,7 @@ export default function MessageBoxFooter() {
 
   const [message, setMessage] = useState('');
   const { id } = useParams();
-  const { MessageBoxMessage, setMessageBoxMessage } =
+  const { MessageBoxMessages, setMessageBoxMessages } =
     useContext(MessageBoxContext);
 
   const handleSubmit = (e) => {
@@ -20,7 +20,17 @@ export default function MessageBoxFooter() {
       voy a tratar de crear un state 
       y usar un useEffect() en messageboxmessages para esto
     */
-    setMessageBoxMessage(message);
+    const nuevoMensaje = {
+      message: message,
+      send_by_me: message,
+      time: Date.now(),
+    };
+
+    setMessageBoxMessages((prev) => {
+      return [...prev, nuevoMensaje]
+    });
+
+    setMessage('');
   }
 
   const handleChange = (e) => {
