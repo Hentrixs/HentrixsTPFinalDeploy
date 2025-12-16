@@ -15,3 +15,9 @@ export default function messageService(id) {
     })
 }
 
+export const addMessageToChat = (chatId, message) => {
+    const chat = messageData.find(c => c.id === chatId);
+    chat.messages.push(message);
+
+    console.log(chat.messages);
+}

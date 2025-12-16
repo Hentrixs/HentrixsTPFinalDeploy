@@ -37,3 +37,11 @@ Hacer funcional la searchbar
 Buscar otros ejemplos de copias de Whatsapp y inspirarse para agregar mas funcionalidad
 
 Mejorar detalles del contact_list y del messagebox
+
+# PRIORIDADES TERCIARIAS
+
+Una vez finalizado el proyecto
+-Preguntarle a la IA si usar la IA me puede causar algun problema en el cerebro, como una bajada de IQ, o algo parecido.
+
+-Pedirle a la IA que en base a los errores que le pedi que me ayude a resolver, me de un diagnostico de que debo mejorar y unos ejercicios para mejorar en eso, (NOTA = seguro que el manejo de useState() con arrays y la comunicacion entre multiples contextos estara incluida, de eso no tengo duda).
+

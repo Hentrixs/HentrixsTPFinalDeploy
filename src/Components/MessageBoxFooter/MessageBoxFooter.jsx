@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { sendMessageService } from '../../services/messageService'
 import { useContext } from 'react'
 import { MessageBoxContext } from '../../Contexts/MessageBoxContext/MessageBoxContext'
+import { addMessageToChat } from '../../services/messageService'
 
 export default function MessageBoxFooter() {
 
@@ -34,6 +35,8 @@ export default function MessageBoxFooter() {
       send_by_me: message,
       time: obtenerHoraActual(),
     };
+
+    addMessageToChat(Number(id), nuevoMensaje);
 
     setMessageBoxMessages((prev) => {
       return [...prev, nuevoMensaje]

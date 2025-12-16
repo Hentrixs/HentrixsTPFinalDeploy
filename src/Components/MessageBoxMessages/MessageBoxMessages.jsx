@@ -4,6 +4,7 @@ import './MessageBoxMessages.css'
 import { useParams } from 'react-router';
 import { useEffect, useContext } from 'react';
 import { MessageBoxContext } from '../../Contexts/MessageBoxContext/MessageBoxContext';
+import { addMessageToChat } from '../../services/messageService';
 
 export default function MessageBoxMessages() {
 
@@ -17,7 +18,7 @@ export default function MessageBoxMessages() {
     } = useContext(MessageBoxContext);
 
     useEffect(() => {
-        setMessageBoxMessages(contact.messages);
+        setMessageBoxMessages([...contact.messages]);
         console.log("use effect funcionando");
     }, [id]);
 
