@@ -7,8 +7,7 @@ const contact_data = [
         contact_unseen_messages: 0,
         contact_favorite: true,
         last_message_content: 'Que tal?',
-        last_message_state: 'SEEN',
-        last_message_created_at: new Date()
+        last_message_state: 'SEEN'
     },
     {
         contact_id: 2,
@@ -18,7 +17,6 @@ const contact_data = [
         contact_favorite: true,
         last_message_content: 'testing',
         last_message_state: 'RECEIVED',/*'NOT_SEND' | 'NOT_RECEIVED' | 'RECEIVED' | 'SEEN'*/
-        last_message_created_at: new Date(),
         contact_messages: ["buenos dias, como estas, estoy afuera"]
     },
     {
@@ -28,8 +26,7 @@ const contact_data = [
         contact_unseen_messages: 0,
         contact_favorite: true,
         last_message_content: 'Que tal?',
-        last_message_state: 'SEEN',
-        last_message_created_at: new Date()
+        last_message_state: 'SEEN'
     },
     {
         contact_id: 4,
@@ -38,8 +35,7 @@ const contact_data = [
         contact_unseen_messages: 0,
         contact_favorite: false,
         last_message_content: 'Nos vemos',
-        last_message_state: 'SEEN',
-        last_message_created_at: new Date()
+        last_message_state: 'SEEN'
     },
     {
         contact_id: 5,
@@ -48,8 +44,7 @@ const contact_data = [
         contact_unseen_messages: 3,
         contact_favorite: true,
         last_message_content: 'El código de autenticación',
-        last_message_state: 'SEEN',
-        last_message_created_at: new Date()
+        last_message_state: 'SEEN'
     },
     {
         contact_id: 6,
@@ -58,8 +53,7 @@ const contact_data = [
         contact_unseen_messages: 0,
         contact_favorite: false,
         last_message_content: 'La reunión es a las 3 PM',
-        last_message_state: 'SEEN',
-        last_message_created_at: new Date()
+        last_message_state: 'SEEN'
     },
     {
         contact_id: 7,
@@ -68,8 +62,7 @@ const contact_data = [
         contact_unseen_messages: 5,
         contact_favorite: false,
         last_message_content: 'revisa los nuevos documentos',
-        last_message_state: 'SEEN',
-        last_message_created_at: new Date()
+        last_message_state: 'SEEN'
     },
     {
         contact_id: 8,
@@ -78,8 +71,7 @@ const contact_data = [
         contact_unseen_messages: 0,
         contact_favorite: false,
         last_message_content: '¿Podemos coordinar?',
-        last_message_state: 'SEEN',
-        last_message_created_at: new Date()
+        last_message_state: 'SEEN'
     },
     {
         contact_id: 9,
@@ -88,8 +80,7 @@ const contact_data = [
         contact_unseen_messages: 1,
         contact_favorite: false,
         last_message_content: 'El envío ya está en camino',
-        last_message_state: 'SEEN',
-        last_message_created_at: new Date()
+        last_message_state: 'SEEN'
     },
     {
         contact_id: 10,
@@ -98,8 +89,7 @@ const contact_data = [
         contact_unseen_messages: 0,
         contact_favorite: false,
         last_message_content: 'Gracias por tu donación',
-        last_message_state: 'SEEN',
-        last_message_created_at: new Date()
+        last_message_state: 'SEEN'
     },
     {
         contact_id: 11,
@@ -108,8 +98,7 @@ const contact_data = [
         contact_unseen_messages: 0,
         contact_favorite: true,
         last_message_content: 'Bien, solo falta el diseno',
-        last_message_state: 'SEEN',
-        last_message_created_at: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000)
+        last_message_state: 'SEEN'
     },
     {
         contact_id: 12,
@@ -118,8 +107,7 @@ const contact_data = [
         contact_unseen_messages: 2,
         contact_favorite: false,
         last_message_content: 'Reunión de Google',
-        last_message_state: 'DELIVERED',
-        last_message_created_at: new Date(Date.now() - 18 * 60 * 60 * 1000)
+        last_message_state: 'DELIVERED'
     },
     {
         contact_id: 13,
@@ -128,8 +116,7 @@ const contact_data = [
         contact_unseen_messages: 0,
         contact_favorite: false,
         last_message_content: '¿Viste el último prototipo?',
-        last_message_state: 'SEEN',
-        last_message_created_at: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000)
+        last_message_state: 'SEEN'
     },
     {
         contact_id: 14,
@@ -138,8 +125,7 @@ const contact_data = [
         contact_unseen_messages: 1,
         contact_favorite: false,
         last_message_content: 'Hilo interesante sobre web3',
-        last_message_state: 'SENT',
-        last_message_created_at: new Date(Date.now() - 45 * 60 * 1000)
+        last_message_state: 'SENT'
     },
     {
         contact_id: 15,
@@ -148,8 +134,7 @@ const contact_data = [
         contact_unseen_messages: 0,
         contact_favorite: false,
         last_message_content: 'Tu reserva está confirmada',
-        last_message_state: 'SEEN',
-        last_message_created_at: new Date(Date.now() - 6 * 60 * 60 * 1000)
+        last_message_state: 'SEEN'
     },
     {
         contact_id: 16,
@@ -158,8 +143,7 @@ const contact_data = [
         contact_unseen_messages: 3,
         contact_favorite: false,
         last_message_content: 'Nueva temporada',
-        last_message_state: 'DELIVERED',
-        last_message_created_at: new Date(Date.now() - 3 * 60 * 60 * 1000)
+        last_message_state: 'DELIVERED'
     },
     {
         contact_id: 17,
@@ -168,8 +152,7 @@ const contact_data = [
         contact_unseen_messages: 0,
         contact_favorite: false,
         last_message_content: 'Estadísticas actualizadas',
-        last_message_state: 'SEEN',
-        last_message_created_at: new Date(Date.now() - 12 * 60 * 60 * 1000)
+        last_message_state: 'SEEN'
     },
     {
         contact_id: 18,
@@ -178,8 +161,7 @@ const contact_data = [
         contact_unseen_messages: 0,
         contact_favorite: true,
         last_message_content: 'Informe trimestral adjunto',
-        last_message_state: 'SEEN',
-        last_message_created_at: new Date(Date.now() - 8 * 24 * 60 * 60 * 1000)
+        last_message_state: 'SEEN'
     },
     {
         contact_id: 19,
@@ -188,8 +170,7 @@ const contact_data = [
         contact_unseen_messages: 4,
         contact_favorite: false,
         last_message_content: 'Llamada programada',
-        last_message_state: 'SENT',
-        last_message_created_at: new Date(Date.now() - 30 * 60 * 1000)
+        last_message_state: 'SENT'
     },
     {
         contact_id: 20,
@@ -198,10 +179,9 @@ const contact_data = [
         contact_unseen_messages: 0,
         contact_favorite: false,
         last_message_content: 'Gracias por participar',
-        last_message_state: 'SEEN',
-        last_message_created_at: new Date(Date.now() - 4 * 24 * 60 * 60 * 1000)
-    }    
-    
+        last_message_state: 'SEEN'
+    }
+
 ]
 
 export default contact_data

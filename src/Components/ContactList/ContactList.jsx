@@ -40,12 +40,10 @@ export default function ContactList() {
                                         <div className='last-message'>
                                             <h3>{contact.contact_name}</h3>
                                             <p>{contact.last_message_content}</p>
-                                            {/* <p>{contact.last_message_created_at}</p> */}
                                         </div>
                                     </div>
                                     <div className='last-time'>
-                                        {/* <p>{contact.last_message_created_at || "last_message" }</p> */}
-                                        <p>last_message</p>
+                                        <p>{"last_message_placeholder"}</p>
                                         <div>
                                             {
                                                 contact.contact_unseen_messages > 0 &&

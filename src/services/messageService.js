@@ -21,3 +21,21 @@ export const addMessageToChat = (chatId, message) => {
 
     console.log(chat.messages);
 }
+
+export function getContactsWithMessages(contacts) {
+    return contacts.map((contact) => {
+        const chat = messageData.find((m) => {
+            return m.id === contact.contact_id
+        });
+
+        let lastTime = '';
+        if (chat && chat.messages.length > 0) {
+            lastTime = chat.messages[chat.messages.length - 1].time;
+        }
+
+        return {
+            ...contact,
+            last_message_time: lastTime
+        };
+    });
+}

@@ -1,5 +1,6 @@
 import { createContext, useState } from "react";
 import { getContactList } from "../../services/contactService";
+import { getContactsWithMessages } from "../../services/messageService";
 
 export const ContactSidebarContext = createContext();
 
@@ -17,6 +18,8 @@ function ContactSidebarContextProvider({ children }) {
                     contact_list = getContactList() :
                     contact_list = getContactList(filter)
 
+                contact_list = getContactsWithMessages(contact_list);
+                console.log(contact_list);
                 setContactState(contact_list)
                 setLoadingContactState(false)
             },
