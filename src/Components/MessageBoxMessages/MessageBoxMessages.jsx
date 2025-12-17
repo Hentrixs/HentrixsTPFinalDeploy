@@ -7,24 +7,38 @@ import { ContactSidebarContext } from '../../Contexts/ContactSidebarContext/Cont
 
 export default function MessageBoxMessages() {
 
+    // Importar id y loadContactList()
     const { id } = useParams();
     const { loadContactList } = useContext(ContactSidebarContext);
 
+    // Importar MessageBoxMessages, setMessageBoxMessages y MessageBoxTextAndAvatar
     const {
         MessageBoxMessages,
         setMessageBoxMessages,
         MessageBoxTextAndAvatar
     } = useContext(MessageBoxContext);
 
+    // Seleccionar mensajes de chat
     const contact = messageService(Number(id));
 
-
-    useEffect(() => {
+    useEffect(() => { // Cuando cambia la id
+        // setean mensajes
         setMessageBoxMessages([...contact.messages]);
-        console.log("pre loading contact_list");
+        // actualizan la lista de contactos
         loadContactList();
     }, [id]);
 
+    /*
+    Flujo de ejecucion:
+    Al montarse el componente se carga el loadmessages()
+    se ejecuta el useeffect() al cambiar la id.
+    se settean los mensajes en el state setMessagebox.
+    se actualiza la lista de contactos.
+    vuelve a renderizarse la pagina (por el cambio del setMessageboxMessages)
+    y se ejecuta el loadmessages() de nuevo.
+    */
+
+    //cargar mensajes
     const loadmessages = () => {
         return MessageBoxMessages.map((message, index) => {
             return (

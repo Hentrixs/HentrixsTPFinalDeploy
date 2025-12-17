@@ -1,11 +1,9 @@
-import React from 'react'
 import './MessageBoxFooter.css'
 import { useParams } from 'react-router'
-import { useState } from 'react'
-import { sendMessageService } from '../../services/messageService'
-import { useContext } from 'react'
+import { useState, useContext } from 'react'
 import { MessageBoxContext } from '../../Contexts/MessageBoxContext/MessageBoxContext'
 import { addMessageToChat } from '../../services/messageService'
+import { ContactSidebarContext } from '../../Contexts/ContactSidebarContext/ContactSidebarContext'
 
 export default function MessageBoxFooter() {
 
@@ -13,15 +11,13 @@ export default function MessageBoxFooter() {
   const { id } = useParams();
   const { MessageBoxMessages, setMessageBoxMessages } =
     useContext(MessageBoxContext);
+  const { loadContactList } = useContext(ContactSidebarContext);
 
   const handleSubmit = (e) => {
+    // previene funcionamiento default del formulario
     e.preventDefault();
-    /* 
-      falta la logica para actualizar todo y ya.
-      voy a tratar de crear un state 
-      y usar un useEffect() en messageboxmessages para esto
-    */
 
+    // funcion para obtener la hora actual
     const obtenerHoraActual = () => {
       const now = new Date();
       const hours = now.getHours().toString().padStart(2, '0');
@@ -30,21 +26,28 @@ export default function MessageBoxFooter() {
       return `${hours}:${minutes}`;
     }
 
+    // mensaje nuevo
     const nuevoMensaje = {
       message: message,
       send_by_me: message,
       time: obtenerHoraActual(),
     };
 
+    // poner mensaje en el chat
     addMessageToChat(Number(id), nuevoMensaje);
 
+    // actualizar mensajes en el state
     setMessageBoxMessages((prev) => {
       return [...prev, nuevoMensaje]
     });
 
+    // limpiar el input
     setMessage('');
+
+    loadContactList();
   }
 
+  // al escribir se carga el mensaje en el state
   const handleChange = (e) => {
     setMessage(e.target.value);
   }

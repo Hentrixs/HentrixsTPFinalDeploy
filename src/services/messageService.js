@@ -10,7 +10,7 @@ export function sendMessageService(chatid, message) {
     });
 };
 
-//funcion que retorna el chat
+//funcion que retorna los mensajes del chat
 export default function messageService(id) {
     return messageData.find((message) => {
         return message.id === id;
@@ -21,7 +21,6 @@ export default function messageService(id) {
 export const addMessageToChat = (chatId, message) => {
     const chat = messageData.find(c => c.id === chatId);
     chat.messages.push(message);
-
 };
 
 //funcion que agrega los mensajes a los contactos

@@ -14,7 +14,6 @@ function App() {
 
   return (
     <Routes>
-      {/* Nota= fijarse si lo del messagebox se puede hacer ocultando todo lo que no sea este*/}
       <Route path="/" element={
         <MessageBoxContextProvider>
           <ContactSidebarContextProvider>
@@ -27,7 +26,6 @@ function App() {
                 <WhatsappFooter />
 
               </div>
-              {/* TODO = ver como hacer para que esto se renderize solamente por encima de los 768px (MessagesScreen) */}
               <>
                 <Outlet />
               </>

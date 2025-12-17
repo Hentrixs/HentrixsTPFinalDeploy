@@ -6,6 +6,7 @@ export default function ContactSearchForm(props) {
 
   const ContactContext = useContext(ContactSidebarContext);
 
+  // state inicial de botones y setter
   const [ButtonState, setButtonState] = useState([
     {
       id: 1,
@@ -30,8 +31,9 @@ export default function ContactSearchForm(props) {
   ]);
 
   const handleClick = (id, name_request) => {
-
+    //carga de contactos
     ContactContext.loadContactList(name_request);
+    //cambio de estado de botones
     setButtonState((prev) => {
       return prev.map((item) => {
         return item.id === id ?

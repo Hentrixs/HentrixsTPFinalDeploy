@@ -1,25 +1,25 @@
 # PRIORIDADES IMPORTANTES
 
-Meter la hora de cuando se mando el ultimo mensaje en el contactlist (eso no es relevante ahora mismo)
+Meter funcionalidad al boton groups.
+(para esto sera necesario configurar la contact_data
+para que tenga contactos de ese tipo)
+(y tambien la message_data para que tenga mensajes de ese tipo)
+y despues lo del service, aunque esa parte es la mas facil.
 
-Hacer el contenido que va dentro de las 3 rutas faltantes que no son messagebox
+Meter funcionalidad al form del searchform (que sirva para buscar contactos).
 
-Copiar el repo de este proyecto a otra carpeta, y en general hacer el deploy como mostro el profe en el video
-
-Mejorar el form del messagebox para que al cambiar de contacto
-no se borren los mensajes
-
-Meter funcionalidad al boton groups
-
-Meter funcionalidad al form del searchform (que sirva para buscar contactos)
-
-Meter Download WhatsApp for Windows" por default al cargar pagina
+Meter Download WhatsApp for Windows" por default al cargar pagina.
 
 Meter algo para que cuando se estan cargando los contactos aparesca algo de fondo que tape la pag temporalmente
+(o sea, una animacion de carga tipo whatsapp).
+
+Copiar el repo de este proyecto a otra carpeta, y en general hacer el deploy como mostro el profe en el video
 
 # PRIORIDADES SECUNDARIAS
 
 voy a inspirarme en el proyecto de franco para meter lo del cambio de tema oscuro a blanco y las animaciones al hacer hover.
+
+Hacer el contenido que va dentro de las 3 rutas faltantes que no son messagebox
 
 Mejorar la burbuja de unseen
 
@@ -58,4 +58,4 @@ Una vez finalizado el proyecto
 - Aaaa ,trabajar incorporando servicios que integren IA.
 poder interactuar con open AI API. ORIENTADO A IA.
 
-
+-Vamos a hacer slack en backend
