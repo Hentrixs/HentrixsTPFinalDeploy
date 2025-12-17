@@ -18,17 +18,21 @@ function App() {
       <Route path="/" element={
         <MessageBoxContextProvider>
           <ContactSidebarContextProvider>
+
             <div className="app-container">
               <div className="contact-list-container">
+
                 <WhatsAppHeader />
                 <ContactSidebar />
                 <WhatsappFooter />
+
               </div>
               {/* TODO = ver como hacer para que esto se renderize solamente por encima de los 768px (MessagesScreen) */}
               <>
                 <Outlet />
               </>
             </div>
+
           </ContactSidebarContextProvider>
         </MessageBoxContextProvider>
       }>

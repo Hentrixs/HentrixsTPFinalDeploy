@@ -19,6 +19,8 @@ Meter algo para que cuando se estan cargando los contactos aparesca algo de fond
 
 # PRIORIDADES SECUNDARIAS
 
+voy a inspirarme en el proyecto de franco para meter lo del cambio de tema oscuro a blanco y las animaciones al hacer hover.
+
 Mejorar la burbuja de unseen
 
 Checkear responsive otra vez.
@@ -44,4 +46,16 @@ Una vez finalizado el proyecto
 -Preguntarle a la IA si usar la IA me puede causar algun problema en el cerebro, como una bajada de IQ, o algo parecido.
 
 -Pedirle a la IA que en base a los errores que le pedi que me ayude a resolver, me de un diagnostico de que debo mejorar y unos ejercicios para mejorar en eso, (NOTA = seguro que el manejo de useState() con arrays y la comunicacion entre multiples contextos estara incluida, de eso no tengo duda).
+
+-Elementar aprender despues APIs.
+
+-aprendo IA, vectorizo base de datos , me mandan un prompt, es decir, especializarse en una gran cantidad de servicios, es decir, incorporar servicios de IA.
+
+-AI Development es el futuro.
+
+-Typescript es fundamental para front end.
+
+- Aaaa ,trabajar incorporando servicios que integren IA.
+poder interactuar con open AI API. ORIENTADO A IA.
+
 
