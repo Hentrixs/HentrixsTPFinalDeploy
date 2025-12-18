@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useRef } from "react";
 import { getContactList } from "../../services/contactService";
 import { getContactsWithMessages } from "../../services/messageService";
 import { getContactById } from "../../services/contactService";
@@ -36,21 +36,31 @@ function ContactSidebarContextProvider({ children }) {
             name_value: false
         }]);
 
+    const searchRef = useRef("");
+
     //funcion de carga de contactos
     function loadContactList(filter = null) {
-        setLoadingContactState(true)
+        if (searchRef.current !== "") {
+            // Aca debe de ir la logica de busqueda
+            // Para hacer esto supondre que el searchRef contiene el valor 
+            // de busqueda
 
-        // Si no se pasa un filtro, buscamos el que esté activo en el estado global
-        let filterToUse = filter;
-        if (!filterToUse) {
-            const active = filterState.find(f => f.name_value === true);
-            filterToUse = active ? active.name : "All";
+
+        } else {
+            setLoadingContactState(true)
+
+            // Si no se pasa un filtro, buscamos el que esté activo en el estado global
+            let filterToUse = filter;
+            if (!filterToUse) {
+                const active = filterState.find(f => f.name_value === true);
+                filterToUse = active ? active.name : "All";
+            }
+
+            const contact_list = getContactsWithMessages(getContactList(filterToUse));
+
+            setContactState(contact_list)
+            setLoadingContactState(false)
         }
-
-        const contact_list = getContactsWithMessages(getContactList(filterToUse));
-
-        setContactState(contact_list)
-        setLoadingContactState(false)
     };
 
     // actualiza el filtro
@@ -69,6 +79,12 @@ function ContactSidebarContextProvider({ children }) {
         console.log(filterName);
     };
 
+
+    const searchcontact = (value) => {
+        searchRef.current = value;
+        // Aca ha de ir el loadContactList
+    };
+
     // objeto que contiene los states y funciones para manejarlos
     const providerValues = {
         contactState,
@@ -78,7 +94,8 @@ function ContactSidebarContextProvider({ children }) {
         setLoadingContactState,
         filterState,
         setFilterState,
-        updateFilter
+        updateFilter,
+        searchcontact,
     };
 
     return (

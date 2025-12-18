@@ -1,15 +1,20 @@
-import React, { useContext, useState } from 'react'
+import { useContext } from 'react'
 import './ContactSearchForm.css'
 import { ContactSidebarContext } from '../../Contexts/ContactSidebarContext/ContactSidebarContext';
 
 export default function ContactSearchForm() {
 
-  const { updateFilter, filterState }
+  const { updateFilter, filterState, searchcontact }
     = useContext(ContactSidebarContext);
 
   const handleClick = (id, name_request) => {
     //cambio de estado de botones y carga de contactos
     updateFilter(id, name_request);
+  }
+
+  const handleChange = (e) => {
+    const value = e.target.value
+    searchcontact(value);
   }
 
   return (
@@ -20,7 +25,7 @@ export default function ContactSearchForm() {
           </path>
           </svg>
         </span>
-        <input type="text" placeholder='Search or start a new chat' />
+        <input type="text" placeholder='Search or start a new chat' onChange={handleChange} />
       </form>
       <div className='contact-buttons'>
         {filterState.map((button) => {
