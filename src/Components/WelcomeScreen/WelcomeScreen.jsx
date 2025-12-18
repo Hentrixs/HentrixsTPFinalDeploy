@@ -2,8 +2,21 @@ import React from 'react'
 import './WelcomeScreen.css'
 
 export default function WelcomeScreen() {
+
+    const LoadingScreen = () => {
+        return (
+            <div className='loading-screen'>
+                <h1>Loading...</h1>
+                <div className='loading-spinner'>
+                    <div className='loading-spinner-inner'></div>
+                </div>
+            </div>
+        )
+    }
+
     return (
         <div className='welcome-screen-container'>
+            <LoadingScreen />
             <div className='welcome-content'>
                 <div className='welcome-image'>
                     {/* SVG que imita la ilustración de WhatsApp */}
