@@ -1,7 +1,5 @@
 # PRIORIDADES IMPORTANTES
 
-Meter funcionalidad al form del searchform (que sirva para buscar contactos).
-
 Meter Download WhatsApp for Windows" por default al cargar pagina.
 (es posible que tenga que hacerlo en el messagebox)
 (esto implicaria que tendria que dejar de estar oculto

@@ -1,0 +1,78 @@
+.welcome-screen-container {
+    background-color: var(--background-secondary);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.welcome-content {
+    max-width: 560px;
+    margin-bottom: 100px;
+}
+
+.welcome-image {
+    width: 320px;
+    margin: 0 auto 40px;
+}
+
+.laptop-illustration {
+    width: 100%;
+    height: auto;
+}
+
+.welcome-title {
+    color: #e9edef;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 16px;
+    font-family: inherit;
+}
+
+.welcome-description {
+    color: #8696a0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 34px;
+}
+
+.welcome-download-btn {
+    background-color: #00a884;
+    color: #111b21;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 24px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.welcome-download-btn:hover {
+    background-color: #06cf9c;
+}
+
+.welcome-footer {
+    position: absolute;
+    bottom: 40px;
+    color: #667781;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.welcome-footer svg {
+    margin-bottom: 2px;
+}
+
+/* Ajuste para que ocupe todo el espacio del Outlet */
+.app-container> :nth-child(2) {
+    flex: 1;
+    display: flex;
+}

@@ -9,6 +9,7 @@ import MessageBoxContextProvider from "./Contexts/MessageBoxContext/MessageBoxCo
 import ContactSidebarContextProvider from "./Contexts/ContactSidebarContext/ContactSidebarContext"
 import Communities from "./Components/Communities/Communities"
 import Status from "./Components/Status/Status"
+import WelcomeScreen from "./Components/WelcomeScreen/WelcomeScreen"
 
 function App() {
 
@@ -26,14 +27,15 @@ function App() {
                 <WhatsappFooter />
 
               </div>
-              <>
+              <div className="messagebox-outlet-container">
                 <Outlet />
-              </>
+              </div>
             </div>
 
           </ContactSidebarContextProvider>
         </MessageBoxContextProvider>
       }>
+        <Route index element={<WelcomeScreen />} />
         <Route path="chat/:id" element={
           <MessageBox />
         } />
