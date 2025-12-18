@@ -1,16 +1,41 @@
-# React + Vite
+# WhatsApp Clone - Trabajo Final Front End
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación de chat inspirada en WhatsApp Web/Desktop, desarrollada como trabajo final para la cursada de Front End. Se centra en ofrecer una experiencia de usuario fluida, una arquitectura limpia y un diseño fiel al original.
 
-Currently, two official plugins are available:
+## 🚀 Funcionalidades Principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Gestión de Contactos**: Lista dinámica de contactos con visualización de últimos mensajes y notificaciones de mensajes no leídos.
+- **Búsqueda Avanzada**: Buscador en tiempo real que filtra contactos instantáneamente por nombre.
+- **Filtros de Categoría**: Organización de chats por "Todos", "No leídos", "Favoritos" y "Grupos".
+- **Mensajería Reactiva**: Envío de mensajes con actualización inmediata en la lista de chats y persistencia de conversación.
+- **Pantalla de Bienvenida**: Interfaz de "WhatsApp Desktop" que aparece por defecto cuando no hay un chat seleccionado, gestionada mediante rutas inteligentes.
+- **Diseño Responsivo**: Adaptado para diferentes resoluciones, incluyendo modo escritorio y ajustes para pantallas menores.
 
-## React Compiler :)
+## 🛠️ Tecnologías y Herramientas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Core
+- **React**: Biblioteca principal para la construcción de la interfaz por componentes.
+- **Vite**: Herramienta de construcción y servidor de desarrollo ultra rápido.
 
-## Expanding the ESLint configuration
+### Enrutamiento y Navegación
+- **React Router**: Gestión de rutas anidadas (`Nested Routes`), rutas de índice (`Index Routes`) y contenedores dinámicos (`Outlet`) para un intercambio de componentes profesional.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Gestión de Estado
+- **Context API**: Centralización del estado global de mensajes y filtros de la barra lateral.
+- **Hooks (useState, useRef, useEffect)**: Manejo síncrono y asíncrono del estado, optimización de búsqueda y efectos secundarios.
+
+### Estilos y Diseño
+- **Vanilla CSS**: Estilos personalizados utilizando variables CSS, Flexbox y Media Queries para un control total del diseño.
+- **SVG**: Iconografía optimizada y escalable.
+
+### Arquitectura
+- **Service Pattern**: Separación de la lógica de datos (filtrado, búsqueda) en servicios independientes para un código más limpio y escalable.
+
+## 📦 Instalación y Uso
+
+1. Clonar el repositorio.
+2. Instalar dependencias: `npm install`
+3. Iniciar en modo desarrollo: `npm run dev`
+
+---
+*Este proyecto está en constante actualización y mejora como parte del proceso de aprendizaje en la UTN.*
