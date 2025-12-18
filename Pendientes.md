@@ -1,35 +1,24 @@
 # PRIORIDADES IMPORTANTES
 
-Meter Download WhatsApp for Windows" por default al cargar pagina.
-(es posible que tenga que hacerlo en el messagebox)
-(esto implicaria que tendria que dejar de estar oculto
-y simplemente que se muestre pero con ese estilo mencionado)
-
 Meter algo para que cuando se estan cargando los contactos aparesca algo de fondo que tape la pag temporalmente
 (o sea, una animacion de carga tipo whatsapp).
+
+Arreglar responsive del celular sin romper responsive de PC.
+
+voy a inspirarme en el proyecto de franco para meter lo del cambio de tema oscuro a blanco y las animaciones al hacer hover.
 
 Copiar el repo de este proyecto a otra carpeta, y en general hacer el deploy como mostro el profe en el video
 
 # PRIORIDADES SECUNDARIAS
 
-voy a inspirarme en el proyecto de franco para meter lo del cambio de tema oscuro a blanco y las animaciones al hacer hover.
-
-Hacer el contenido que va dentro de las 3 rutas faltantes que no son messagebox
-
 Mejorar la burbuja de unseen
-
-Checkear responsive otra vez.
 
 Buscar un favicon mejor
 
-Arreglar tamanio de iconos hasta la resolucion 1080p, si es necesario agregar 
-otra media query (hecho, pero despues lo checkeare otra vez)
-
 Ajustar el tamanio de los objetos
 
+Revisar comportamiento del messagebox al meter demasiados mensajes
 al messagebox meterle barra deslizante.
-
-Hacer funcional la searchbar
 
 Buscar otros ejemplos de copias de Whatsapp y inspirarse para agregar mas funcionalidad
 
