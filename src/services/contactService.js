@@ -20,3 +20,9 @@ export function getContactById(contact_id) {
         }
     }
 }
+
+// obtiene la lista de contactos usando filtros y busqueda
+export function getContactListBySearch(search, ...filter) {
+    const contact_list = getContactList(...filter);
+    return contact_list.filter((contact) => contact.contact_name.toLowerCase().includes(search.toLowerCase()));
+}

@@ -2,6 +2,7 @@ import { createContext, useState, useRef } from "react";
 import { getContactList } from "../../services/contactService";
 import { getContactsWithMessages } from "../../services/messageService";
 import { getContactById } from "../../services/contactService";
+import { getContactListBySearch } from "../../services/contactService";
 
 export const ContactSidebarContext = createContext();
 
@@ -40,16 +41,21 @@ function ContactSidebarContextProvider({ children }) {
 
     //funcion de carga de contactos
     function loadContactList(filter = null) {
+        // Parte del filtro de busqueda
         if (searchRef.current !== "") {
-            // Aca debe de ir la logica de busqueda
-            // Para hacer esto supondre que el searchRef contiene el valor 
-            // de busqueda
-
-
+            let filterToUse = filter;
+            if (!filterToUse) {
+                const active = filterState.find(f => f.name_value === true);
+                filterToUse = active ? active.name : "All";
+            }
+            setLoadingContactState(true)
+            const contact_list = getContactsWithMessages(getContactListBySearch(searchRef.current, filterToUse));
+            setContactState(contact_list)
+            setLoadingContactState(false)
         } else {
+            // Parte del contactlist con los botones de filtro
             setLoadingContactState(true)
 
-            // Si no se pasa un filtro, buscamos el que esté activo en el estado global
             let filterToUse = filter;
             if (!filterToUse) {
                 const active = filterState.find(f => f.name_value === true);
@@ -82,7 +88,7 @@ function ContactSidebarContextProvider({ children }) {
 
     const searchcontact = (value) => {
         searchRef.current = value;
-        // Aca ha de ir el loadContactList
+        loadContactList();
     };
 
     // objeto que contiene los states y funciones para manejarlos
