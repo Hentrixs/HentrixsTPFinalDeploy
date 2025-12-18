@@ -9,7 +9,9 @@ export default function MessageBoxMessages() {
 
     // Importar id y loadContactList()
     const { id } = useParams();
-    const { loadContactList } = useContext(ContactSidebarContext);
+    const { loadContactList,
+        changeFilter
+    } = useContext(ContactSidebarContext);
 
     // Importar MessageBoxMessages, setMessageBoxMessages y MessageBoxTextAndAvatar
     const {

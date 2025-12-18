@@ -1,6 +1,7 @@
 import { createContext, useState } from "react";
 import { getContactList } from "../../services/contactService";
 import { getContactsWithMessages } from "../../services/messageService";
+import { getContactById } from "../../services/contactService";
 
 export const ContactSidebarContext = createContext();
 
@@ -11,24 +12,61 @@ function ContactSidebarContextProvider({ children }) {
 
     // Estado de loading de contactos y seter de loading de contactos
     const [loadingContactsState, setLoadingContactState] = useState(true);
+    const [activefilter, setactivefilter] = useState([]);
 
-    // funcion de carga de contactos
-    function loadContactList(filter = "All") {
-        //estado de carga en true y se crea contact_list
+    const [filterState, setFilterState] = useState([
+        {
+            id: 1,
+            name: "All",
+            name_value: true
+        },
+        {
+            id: 2,
+            name: "Unread",
+            name_value: false
+        },
+        {
+            id: 3,
+            name: "Favourites",
+            name_value: false
+        },
+        {
+            id: 4,
+            name: "Groups",
+            name_value: false
+        }]);
+
+    //funcion de carga de contactos
+    function loadContactList(filter = null) {
         setLoadingContactState(true)
-        let contact_list
 
-        //se filtra la lista de contactos usando getContactlist()
-        filter === "All" ?
-            contact_list = getContactList() :
-            contact_list = getContactList(filter)
+        // Si no se pasa un filtro, buscamos el que esté activo en el estado global
+        let filterToUse = filter;
+        if (!filterToUse) {
+            const active = filterState.find(f => f.name_value === true);
+            filterToUse = active ? active.name : "All";
+        }
 
-        //se agregan los mensajes a los contactos usando 
-        //getContactsWithMessages(contact_list)
-        contact_list = getContactsWithMessages(contact_list);
+        const contact_list = getContactsWithMessages(getContactList(filterToUse));
+
         setContactState(contact_list)
         setLoadingContactState(false)
+    };
 
+    // actualiza el filtro
+    const updateFilter = (id, filterName) => {
+        // Actualizamos el estado
+        setFilterState((prev) => {
+            return prev.map((item) => {
+                return item.id === id ?
+                    { ...item, name_value: true } :
+                    { ...item, name_value: false }
+            })
+        })
+
+        // Cargamos la lista
+        loadContactList(filterName);
+        console.log(filterName);
     };
 
     // objeto que contiene los states y funciones para manejarlos
@@ -37,7 +75,10 @@ function ContactSidebarContextProvider({ children }) {
         setContactState,
         loadContactList,
         loadingContactsState,
-        setLoadingContactState
+        setLoadingContactState,
+        filterState,
+        setFilterState,
+        updateFilter
     };
 
     return (

@@ -180,6 +180,26 @@ const contact_data = [
         contact_favorite: false,
         last_message_content: 'Gracias por participar',
         last_message_state: 'SEEN'
+    },
+    {
+        contact_id: 21,
+        contact_name: 'Proyecto Final UTN',
+        contact_avatar: 'https://cdn-icons-png.flaticon.com/512/912/912318.png',
+        contact_unseen_messages: 2,
+        contact_favorite: true,
+        is_group: true,
+        last_message_content: '¿Alguien terminó lo del context?',
+        last_message_state: 'RECEIVED'
+    },
+    {
+        contact_id: 22,
+        contact_name: 'Familia',
+        contact_avatar: 'https://cdn-icons-png.flaticon.com/512/3233/3233483.png',
+        contact_unseen_messages: 0,
+        contact_favorite: false,
+        is_group: true,
+        last_message_content: '¡Mamá compró facturas!',
+        last_message_state: 'SEEN'
     }
 
 ]

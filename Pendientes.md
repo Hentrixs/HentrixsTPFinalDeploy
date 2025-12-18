@@ -1,14 +1,11 @@
 # PRIORIDADES IMPORTANTES
 
-Meter funcionalidad al boton groups.
-(para esto sera necesario configurar la contact_data
-para que tenga contactos de ese tipo)
-(y tambien la message_data para que tenga mensajes de ese tipo)
-y despues lo del service, aunque esa parte es la mas facil.
-
 Meter funcionalidad al form del searchform (que sirva para buscar contactos).
 
 Meter Download WhatsApp for Windows" por default al cargar pagina.
+(es posible que tenga que hacerlo en el messagebox)
+(esto implicaria que tendria que dejar de estar oculto
+y simplemente que se muestre pero con ese estilo mencionado)
 
 Meter algo para que cuando se estan cargando los contactos aparesca algo de fondo que tape la pag temporalmente
 (o sea, una animacion de carga tipo whatsapp).

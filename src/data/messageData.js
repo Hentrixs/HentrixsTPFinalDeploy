@@ -176,5 +176,20 @@ export const messageData = [
       { send_by_me: "¡No puedo creer que ya pasó un año!", time: "20:32" },
       { user2: "El tiempo vuela", time: "20:35" }
     ]
+  },
+  {
+    id: 21,
+    messages: [
+      { user2: "Hola a todos, ¿cómo va el proyecto?", time: "10:00" },
+      { send_by_me: "Yo ya terminé la parte de los contexts", time: "10:05" },
+      { user2: "¿Alguien terminó lo del context?", time: "10:10" }
+    ]
+  },
+  {
+    id: 22,
+    messages: [
+      { user2: "¡Hola familia!", time: "09:00" },
+      { user2: "¡Mamá compró facturas!", time: "09:30" }
+    ]
   }
 ];

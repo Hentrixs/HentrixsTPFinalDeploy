@@ -2,45 +2,14 @@ import React, { useContext, useState } from 'react'
 import './ContactSearchForm.css'
 import { ContactSidebarContext } from '../../Contexts/ContactSidebarContext/ContactSidebarContext';
 
-export default function ContactSearchForm(props) {
+export default function ContactSearchForm() {
 
-  const ContactContext = useContext(ContactSidebarContext);
-
-  // state inicial de botones y setter
-  const [ButtonState, setButtonState] = useState([
-    {
-      id: 1,
-      name: "All",
-      name_value: true
-    },
-    {
-      id: 2,
-      name: "Unread",
-      name_value: false
-    },
-    {
-      id: 3,
-      name: "Favourites",
-      name_value: false
-    },
-    {
-      id: 4,
-      name: "Groups",
-      name_value: false
-    }
-  ]);
+  const { updateFilter, filterState }
+    = useContext(ContactSidebarContext);
 
   const handleClick = (id, name_request) => {
-    //carga de contactos
-    ContactContext.loadContactList(name_request);
-    //cambio de estado de botones
-    setButtonState((prev) => {
-      return prev.map((item) => {
-        return item.id === id ?
-          { ...item, name_value: true } :
-          { ...item, name_value: false }
-      })
-    })
+    //cambio de estado de botones y carga de contactos
+    updateFilter(id, name_request);
   }
 
   return (
@@ -54,7 +23,7 @@ export default function ContactSearchForm(props) {
         <input type="text" placeholder='Search or start a new chat' />
       </form>
       <div className='contact-buttons'>
-        {ButtonState.map((button) => {
+        {filterState.map((button) => {
           return (
             <button
               key={button.id}
