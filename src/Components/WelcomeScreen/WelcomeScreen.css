@@ -85,27 +85,30 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    border: 1px solid blue;
     position: fixed;
     left: 0;
     top: 0;
     background-color: var(--background-secondary);
 }
 
+.whatsapp-loading-logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 40px;
+}
+
 .loading-spinner {
-    margin: 1rem;
-    border: 1px solid green;
-    height: 1rem;
-    width: 15rem;
+    margin: 0;
+    height: 0.2rem;
+    width: 25rem;
     border-radius: 1rem;
     display: flex;
     align-items: center;
-    padding: 0.1rem;
+    background-color: #2F2E2F;
 }
 
 .loading-spinner-inner {
-    border: 1px solid greenyellow;
-    background-color: greenyellow;
+    background-color: #25D366;
     height: 100%;
     border-radius: 1rem;
     width: 0%;

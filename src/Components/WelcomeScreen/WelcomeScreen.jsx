@@ -1,12 +1,13 @@
 import React from 'react'
 import './WelcomeScreen.css'
+import whatsappLogo from '../../assets/logo/whatsapp-loading-logo.png'
 
 export default function WelcomeScreen() {
 
     const LoadingScreen = () => {
         return (
             <div className='loading-screen'>
-                <h1>Loading...</h1>
+                <img src={whatsappLogo} alt="WhatsApp Loading" className='whatsapp-loading-logo' />
                 <div className='loading-spinner'>
                     <div className='loading-spinner-inner'></div>
                 </div>
