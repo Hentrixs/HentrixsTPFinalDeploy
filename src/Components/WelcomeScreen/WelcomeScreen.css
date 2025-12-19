@@ -65,6 +65,8 @@
     display: flex;
     align-items: center;
     gap: 6px;
+    animation-name: welcome-footer;
+    animation-duration: 2s;
 }
 
 .welcome-footer svg {
@@ -76,6 +78,9 @@
     flex: 1;
     display: flex;
 }
+
+
+
 
 /* Loading Screen */
 .loading-screen {
@@ -89,6 +94,8 @@
     left: 0;
     top: 0;
     background-color: var(--background-secondary);
+    animation-name: loading-screen;
+    animation-duration: 2s;
 }
 
 .whatsapp-loading-logo {
@@ -123,5 +130,25 @@
 
     to {
         width: 100%;
+    }
+}
+
+@keyframes loading-screen {
+    from {
+        display: flex;
+    }
+
+    to {
+        display: none;
+    }
+}
+
+@keyframes welcome-footer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0;
     }
 }

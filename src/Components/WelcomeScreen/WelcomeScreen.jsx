@@ -1,10 +1,17 @@
-import React from 'react'
 import './WelcomeScreen.css'
 import whatsappLogo from '../../assets/logo/whatsapp-loading-logo.png'
+import { useState } from 'react'
 
 export default function WelcomeScreen() {
 
+    const [renderLoadingScreen, setRenderLoadingScreen] = useState(true)
+
     const LoadingScreen = () => {
+
+        setTimeout(() => {
+            setRenderLoadingScreen(false)
+        }, 2000)
+
         return (
             <div className='loading-screen'>
                 <img src={whatsappLogo} alt="WhatsApp Loading" className='whatsapp-loading-logo' />
@@ -12,12 +19,12 @@ export default function WelcomeScreen() {
                     <div className='loading-spinner-inner'></div>
                 </div>
             </div>
-        )
-    }
+        );
+    };
 
     return (
         <div className='welcome-screen-container'>
-            <LoadingScreen />
+            {renderLoadingScreen ? <LoadingScreen /> : <></>}
             <div className='welcome-content'>
                 <div className='welcome-image'>
                     {/* SVG que imita la ilustración de WhatsApp */}
@@ -47,5 +54,5 @@ export default function WelcomeScreen() {
                 Your personal messages are end-to-end encrypted
             </div>
         </div>
-    )
-}
+    );
+};
