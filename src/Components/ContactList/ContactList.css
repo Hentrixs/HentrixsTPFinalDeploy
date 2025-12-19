@@ -93,3 +93,19 @@
     padding: 0 0.2rem;
     margin-top: 0.2rem;
 }
+
+.subdiv:hover {
+    animation-name: subdiv;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes subdiv {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.02);
+    }
+}
