@@ -43,9 +43,9 @@
 
 .contact-buttons {
     display: flex;
-    gap: 1rem;
+    gap: 0.3rem;
     margin-left: 1rem;
-    justify-content: center;
+    justify-content: flex-start;
 
     button {
         border: 1px solid #2F2E2F;
@@ -53,11 +53,14 @@
         border-radius: 100px;
         width: min-content;
         padding: 0.5rem 1rem;
+        font-size: 0.7rem;
         font-weight: 600;
         background-color: inherit;
     }
 
     button:hover {
         background-color: #2F2E2F;
-    };
+    }
+
+    ;
 }

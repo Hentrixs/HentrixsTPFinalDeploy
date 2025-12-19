@@ -1,8 +1,5 @@
 # PRIORIDADES IMPORTANTES
 
-Meter algo para que cuando se estan cargando los contactos aparesca algo de fondo que tape la pag temporalmente
-(o sea, una animacion de carga tipo whatsapp).
-
 Arreglar responsive del celular sin romper responsive de PC.
 
 voy a inspirarme en el proyecto de franco para meter lo del cambio de tema oscuro a blanco y las animaciones al hacer hover.
