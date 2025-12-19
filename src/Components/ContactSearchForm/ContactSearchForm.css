@@ -26,17 +26,17 @@
         width: 100%;
         border: 0px;
         padding: 0.7rem 1rem 0.7rem 3rem;
-        background-color: #2F2E2F;
+        background-color: var(--bg-hover);
         border-radius: 1rem;
         font-weight: 1000;
     }
 
     input:hover {
-        outline: 1px solid #757575;
+        outline: 1px solid var(--input-outline);
     }
 
     input:focus {
-        outline: 2px solid #21C162;
+        outline: 2px solid var(--input-focus);
     }
 
 }
@@ -48,7 +48,7 @@
     justify-content: flex-start;
 
     button {
-        border: 1px solid #2F2E2F;
+        border: 1px solid var(--border-primary);
         padding: 0.5rem;
         border-radius: 100px;
         width: min-content;
@@ -59,7 +59,7 @@
     }
 
     button:hover {
-        background-color: #2F2E2F;
+        background-color: var(--bg-hover);
     }
 
     ;

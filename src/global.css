@@ -17,10 +17,43 @@ body {
 }
 
 :root {
-    --background-secondary: #171617;
-    --border-primary: #2F2E2F;
-    --hover-element: #2F2E2F;
-    --background-message: #252627;
+    /* Fondos */
+    --bg-main: #111b21;
+    --bg-secondary: #202c33;
+    --bg-sidebar: #171617;
+    --bg-footer: #1d1f1f;
+    --bg-hover: #2f2e2f;
+    --bg-app: #0c1317;
+
+    /* Mensajes */
+    --msg-sent: #005c4b;
+    --msg-received: #202c33;
+    --msg-sent-bubble: #154d36;
+    --msg-received-bubble: #252726;
+
+    /* Textos */
+    --text-primary: #e9edef;
+    --text-secondary: #abaca8;
+    --text-muted: #8696a0;
+    --text-active: #d9fcb3;
+    --text-time: #9d9e9e;
+
+    /* Marca y Acciones */
+    --brand-green: #25d366;
+    --brand-green-hover: #33e074;
+    --border-primary: #2f2e2f;
+    --badge-bg: #25d366;
+    --badge-text: #111b21;
+
+    /* Filtros Búsqueda */
+    --filter-bg-active: #113528;
+    --input-outline: #757575;
+    --input-focus: #21c162;
+
+    /* Compatibilidad (Legacy) */
+    --background-secondary: var(--bg-sidebar);
+    --background-message: var(--msg-received-bubble);
+    --hover-element: var(--bg-hover);
 }
 
 .app-container,

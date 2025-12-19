@@ -27,7 +27,7 @@
 }
 
 .welcome-title {
-    color: #e9edef;
+    color: var(--text-primary);
     font-size: 2.2rem;
     font-weight: 300;
     margin-bottom: 16px;
@@ -35,14 +35,14 @@
 }
 
 .welcome-description {
-    color: #ABACA8;
+    color: var(--text-secondary);
     font-size: 0.9rem;
     line-height: 1.5;
     margin-bottom: 34px;
 }
 
 .welcome-download-btn {
-    background-color: #25D366;
+    background-color: var(--brand-green);
     color: var(--background-secondary);
     border: none;
     border-radius: 24px;
@@ -55,14 +55,14 @@
 }
 
 .welcome-download-btn:hover {
-    background-color: #33e074;
+    background-color: var(--brand-green-hover);
     transform: scale(1.02);
 }
 
 .welcome-footer {
     position: absolute;
     bottom: 40px;
-    color: #ABACA8;
+    color: var(--text-secondary);
     font-size: 0.85rem;
     display: flex;
     align-items: center;
@@ -113,11 +113,11 @@
     border-radius: 1rem;
     display: flex;
     align-items: center;
-    background-color: #2F2E2F;
+    background-color: var(--border-primary);
 }
 
 .loading-spinner-inner {
-    background-color: #25D366;
+    background-color: var(--brand-green);
     height: 100%;
     border-radius: 1rem;
     width: 0%;

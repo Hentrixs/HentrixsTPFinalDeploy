@@ -15,7 +15,7 @@
     }
 
     p {
-        background-color: var(--background-message);
+        background-color: var(--msg-received-bubble);
         padding: 9px 8px 7px 6px;
         gap: 1rem;
         display: flex;
@@ -23,11 +23,21 @@
         border-radius: 5px;
     }
 
+    .sent {
+        background-color: var(--msg-sent-bubble);
+        align-self: flex-end;
+    }
+
+    .received {
+        background-color: var(--msg-received-bubble);
+        align-self: flex-start;
+    }
+
     span {
         position: relative;
         bottom: -10px;
         right: -2px;
-        color: #9D9E9E;
+        color: var(--text-time);
         font-size: 0.7rem;
     }
 }
