@@ -1,7 +1,5 @@
 # PRIORIDADES IMPORTANTES
 
-Arreglar responsive del celular sin romper responsive de PC.
-
 voy a inspirarme en el proyecto de franco para meter lo del cambio de tema oscuro a blanco y las animaciones al hacer hover.
 
 Copiar el repo de este proyecto a otra carpeta, y en general hacer el deploy como mostro el profe en el video
