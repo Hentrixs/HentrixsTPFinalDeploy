@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    height: 100%;
+}
+
 body {
     background-color: var(--background-secondary);
-    height: 100%;
-    /* 100 vw before */
+    min-height: 100%;
     width: 100%;
     overflow: hidden;
 }
@@ -21,17 +25,23 @@ body {
 
 .app-container,
 .contact-list-container {
-    /* only .app-container before */
     height: 100vh;
+    height: 100dvh;
     overflow: hidden;
 }
 
 .contact-list-container {
     border-right: 1px solid var(--border-primary);
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 aside {
-    height: 87vh;
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 @media (min-width:513px) {
@@ -64,7 +74,7 @@ aside {
 @media (min-width:1176px) {
 
     aside {
-        height: auto;
+        height: 100vh;
     }
 
     .app-container {
@@ -76,9 +86,11 @@ aside {
         border-right: 1px solid var(--border-primary);
         display: flex;
         position: absolute;
+        left: 0;
         top: 0;
-        flex-direction: row;
-        width: auto;
+        height: 100dvh;
+        flex-direction: column;
+        width: 4rem;
 
         ul {
             display: flex;
@@ -89,7 +101,8 @@ aside {
     }
 
     .contact-container {
-        height: 80vh;
+        flex: 1;
+        min-height: 0;
     }
 
     .contact-list-container {
@@ -97,6 +110,7 @@ aside {
         display: flex;
         min-width: 40rem;
         flex-direction: column;
+        height: 100dvh;
 
         header,
         aside {

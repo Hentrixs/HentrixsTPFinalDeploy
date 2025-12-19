@@ -28,6 +28,8 @@ Una vez finalizado el proyecto
 
 -Pedirle a la IA que en base a los errores que le pedi que me ayude a resolver, me de un diagnostico de que debo mejorar y unos ejercicios para mejorar en eso, (NOTA = seguro que el manejo de useState() con arrays y la comunicacion entre multiples contextos estara incluida, de eso no tengo duda).
 
+- **Entrenamiento Intensivo de Layouts**: Crear una página dedicada exclusivamente a practicar múltiples tipos de scrollbars (anidados, elásticos, con Flexbox y Grid) para dominar la jerarquía de alturas y el uso de `dvh` y evitar que el error del scroll se repita.
+
 -Elementar aprender despues APIs.
 
 -aprendo IA, vectorizo base de datos , me mandan un prompt, es decir, especializarse en una gran cantidad de servicios, es decir, incorporar servicios de IA.
