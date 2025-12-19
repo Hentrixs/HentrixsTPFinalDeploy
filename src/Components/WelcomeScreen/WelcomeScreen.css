@@ -108,7 +108,8 @@
 .loading-spinner {
     margin: 0;
     height: 0.2rem;
-    width: 25rem;
+    width: 80%;
+    max-width: 25rem;
     border-radius: 1rem;
     display: flex;
     align-items: center;

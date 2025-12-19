@@ -142,5 +142,6 @@ aside {
 
     .subdiv {
         flex-wrap: wrap;
+        margin: 0.5rem 0rem;
     }
 }

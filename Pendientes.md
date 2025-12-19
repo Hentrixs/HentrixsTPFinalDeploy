@@ -1,5 +1,7 @@
 # PRIORIDADES IMPORTANTES
 
+Checar responsive en cel otra vez.
+
 voy a inspirarme en el proyecto de franco para meter lo del cambio de tema oscuro a blanco y las animaciones al hacer hover.
 
 Copiar el repo de este proyecto a otra carpeta, y en general hacer el deploy como mostro el profe en el video
@@ -8,7 +10,7 @@ Copiar el repo de este proyecto a otra carpeta, y en general hacer el deploy com
 
 Mejorar la burbuja de unseen
 
-Buscar un favicon mejor
+Buscar un favicon mejor (pedirle a IA que lo haga)
 
 Ajustar el tamanio de los objetos
 
