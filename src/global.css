@@ -130,4 +130,17 @@ aside {
         width: 100%;
         height: 100%;
     }
+
+    .contact-buttons {
+        gap: 1rem;
+        justify-content: flex-start;
+
+        button {
+            font-size: 0.9rem;
+        }
+    }
+
+    .subdiv {
+        flex-wrap: wrap;
+    }
 }
