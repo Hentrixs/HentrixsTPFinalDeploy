@@ -13,7 +13,6 @@
 .contact-container::-webkit-scrollbar {
     width: 7px;
     height: 5px;
-    /* 100% before */
 }
 
 .contact-container::-webkit-scrollbar-track {
@@ -33,64 +32,64 @@
 }
 
 .subdiv {
-
     display: flex;
     flex-direction: row;
     height: 5rem;
     margin: 0.5rem 1rem;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem;
     gap: 1rem;
     flex-wrap: nowrap;
     align-items: flex-start;
     justify-content: space-between;
+    border-radius: 1rem;
+    transition: background-color 0.2s ease;
+}
 
-    div {
-        display: flex;
-        column-gap: 0.5rem;
-        line-height: 1.5rem;
+.subdiv:hover {
+    background-color: var(--bg-hover);
+}
 
-        p {
-            p {
-                color: var(--text-secondary);
-            }
-        }
+.subdiv>div {
+    display: flex;
+    column-gap: 0.5rem;
+    line-height: 1.5rem;
+}
 
-        .last-time {
-            display: flex;
-            flex-direction: column;
+.subdiv>div p {
+    color: var(--text-secondary);
+}
 
-            div {
-                display: flex;
-                flex-direction: row-reverse;
-            }
+.last-time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.2rem;
+}
 
-        }
-    }
+.last-time div {
+    display: flex;
+    flex-direction: row-reverse;
+}
 
-    .subdiv:hover {
-        background-color: var(--bg-hover);
-        border-radius: 1rem;
-    }
+.last-message {
+    display: flex;
+    line-height: 1.5rem;
+    flex-direction: column;
+    height: 3rem;
+}
 
-    .last-message {
-        display: flex;
-        line-height: 1.5rem;
-        flex-direction: column;
-        height: 3rem;
-    }
-
-    .unseen-badge {
-        background-color: var(--badge-bg);
-        color: var(--badge-text);
-        /* Texto oscuro para contraste */
-        font-size: 0.75rem;
-        font-weight: 600;
-        min-width: 1.2rem;
-        height: 1.2rem;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0 0.2rem;
-        margin-top: 0.2rem;
-    }
+.unseen-badge {
+    background-color: var(--badge-bg);
+    color: var(--badge-text);
+    /* Texto oscuro para contraste */
+    font-size: 0.75rem;
+    font-weight: 600;
+    min-width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.2rem;
+    margin-top: 0.2rem;
+}
