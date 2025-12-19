@@ -35,13 +35,13 @@ export default function WelcomeScreen() {
                         <div className='welcome-image'>
                             {/* SVG que imita la ilustración de WhatsApp */}
                             <svg viewBox="0 0 457 232" fill="none" xmlns="http://www.w3.org/2000/svg" className="laptop-illustration">
-                                <path d="M410 180H47C38.1634 180 31 172.837 31 164V24C31 15.1634 38.1634 8 47 8H410C418.837 8 426 15.1634 426 24V164C426 172.837 418.837 180 410 180Z" fill="#202C33" />
-                                <rect x="25" y="180" width="407" height="12" rx="6" fill="#2A3942" />
-                                <rect x="178" y="192" width="101" height="8" rx="4" fill="#3B4A54" />
+                                <path d="M410 180H47C38.1634 180 31 172.837 31 164V24C31 15.1634 38.1634 8 47 8H410C418.837 8 426 15.1634 426 24V164C426 172.837 418.837 180 410 180Z" fill="#2b2b2b" />
+                                <rect x="25" y="180" width="407" height="12" rx="6" fill="#333333" />
+                                <rect x="178" y="192" width="101" height="8" rx="4" fill="#3d3d3d" />
                                 <circle cx="228" cy="85" r="45" fill="#111B21" fillOpacity="0.5" />
-                                <path d="M210 75L245 95L210 115V75Z" fill="#8696A0" />
-                                <path d="M300 40H340V80H300V40Z" fill="#00A884" fillOpacity="0.2" />
-                                <circle cx="100" cy="140" r="15" fill="#00A884" fillOpacity="0.3" />
+                                <path d="M210.5 65L245.5 85L210.5 105V65Z" fill="#25D366" fillOpacity="0.8" />
+                                <path d="M300 40H340V80H300V40Z" fill="#25D366" fillOpacity="0.1" />
+                                <circle cx="100" cy="140" r="15" fill="#25D366" fillOpacity="0.2" />
                             </svg>
                         </div>
 
