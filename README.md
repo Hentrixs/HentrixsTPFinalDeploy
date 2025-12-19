@@ -37,5 +37,15 @@ Este proyecto es una aplicación de chat inspirada en WhatsApp Web/Desktop, desa
 2. Instalar dependencias: `npm install`
 3. Iniciar en modo desarrollo: `npm run dev`
 
+## 🤖 Colaboración con IA y Metodología de Trabajo
+
+A partir de la segunda semana del inicio del proyecto, se incorporó el uso de Inteligencia Artificial (IA) como una herramienta estratégica de desarrollo. Esta colaboración se centró en tres pilares fundamentales:
+
+1.  **Automatización de Procesos Repetitivos**: Agilización de tareas redundantes en el maquetado y estructuración inicial de componentes.
+2.  **Refactorización y Optimización**: Limpieza de partes del código que estaban "hardcodeadas", migrando hacia un sistema de diseño basado en variables CSS (`:root`) y patrones de arquitectura más robustos (Services, Context API).
+3.  **Aprendizaje Ad-hoc**: Uso de la IA como mentor personalizado para la resolución de problemas lógicos complejos y la enseñanza de mejores prácticas de React y CSS en tiempo real.
+
+Esta sinergia permitió elevar la calidad técnica del proyecto manteniendo al usuario como el director creativo y arquitecto de la solución.
+
 ---
 *Este proyecto está en constante actualización y mejora como parte del proceso de aprendizaje en la UTN.*

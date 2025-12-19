@@ -6,8 +6,6 @@ Copiar el repo de este proyecto a otra carpeta, y en general hacer el deploy com
 
 # PRIORIDADES SECUNDARIAS
 
-Mejorar la burbuja de unseen
-
 Buscar un favicon mejor (pedirle a IA que lo haga)
 
 Ajustar el tamanio de los objetos
@@ -16,8 +14,6 @@ Revisar comportamiento del messagebox al meter demasiados mensajes
 al messagebox meterle barra deslizante.
 
 Buscar otros ejemplos de copias de Whatsapp y inspirarse para agregar mas funcionalidad
-
-Mejorar detalles del contact_list y del messagebox
 
 # PRIORIDADES TERCIARIAS
 
