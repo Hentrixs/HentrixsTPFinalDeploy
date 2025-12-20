@@ -50,6 +50,52 @@ body {
     --input-outline: #757575;
     --input-focus: #21c162;
 
+    /* Background de Chat */
+    --chat-bg-image: url(../../assets/background.jfif);
+
+    /* Compatibilidad (Legacy) */
+    --background-secondary: var(--bg-sidebar);
+    --background-message: var(--msg-received-bubble);
+    --hover-element: var(--bg-hover);
+}
+
+[data-theme='light'] {
+    /* Fondos */
+    --bg-main: #ffffff;
+    --bg-secondary: #f0f2f5;
+    --bg-sidebar: #ffffff;
+    --bg-footer: #f0f2f5;
+    --bg-hover: #f5f6f6;
+    --bg-app: #e9edef;
+
+    /* Mensajes */
+    --msg-sent: #d9fdd3;
+    --msg-received: #ffffff;
+    --msg-sent-bubble: #d9fdd3;
+    --msg-received-bubble: #ffffff;
+
+    /* Textos */
+    --text-primary: #111b21;
+    --text-secondary: #667781;
+    --text-muted: #8696a0;
+    --text-active: #00a884;
+    --text-time: #667781;
+
+    /* Marca y Acciones */
+    --brand-green: #25d366;
+    --brand-green-hover: #18ca5f;
+    --border-primary: #e9edef;
+    --badge-bg: #25d366;
+    --badge-text: #ffffff;
+
+    /* Filtros Búsqueda */
+    --filter-bg-active: #e7fce3;
+    --input-outline: #e9edef;
+    --input-focus: #00a884;
+
+    /* Background de Chat */
+    --chat-bg-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+
     /* Compatibilidad (Legacy) */
     --background-secondary: var(--bg-sidebar);
     --background-message: var(--msg-received-bubble);
@@ -61,6 +107,7 @@ body {
     height: 100vh;
     height: 100dvh;
     overflow: hidden;
+    background-color: var(--bg-main);
 }
 
 .contact-list-container {
@@ -115,7 +162,6 @@ aside {
     }
 
     .whatsapp-footer {
-        border: 0;
         border-right: 1px solid var(--border-primary);
         display: flex;
         position: absolute;

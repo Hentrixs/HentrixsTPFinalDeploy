@@ -1,44 +1,45 @@
 .messagebox-footer {
-    background-color: aqua;
+    background-color: var(--bg-footer);
     margin: 1rem;
     border-radius: 100px;
     padding: 0.5rem;
     display: block;
     background-color: var(--background-message);
-    
+
     form {
         width: auto;
         display: flex;
         flex-direction: row;
         align-items: center;
 
-            div {
+        div {
+            display: flex;
+
+            span {
+                /*background-color: aqua; */
+                height: 2.5rem;
+                width: 2.5rem;
                 display: flex;
-
-                span {
-                    /*background-color: aqua; */
-                    height: 2.5rem;
-                    width: 2.5rem;
-                    display: flex;
-                    flex-direction: row;
-                    border-radius: 100px;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                span:hover {
-                    background-color: gray;
-                }
-            
-                }
-                svg {
-                    height: 1.5rem;
-                    width: 1.5rem;
-                }                
+                flex-direction: row;
+                border-radius: 100px;
+                justify-content: center;
+                align-items: center;
             }
 
+            span:hover {
+                background-color: var(--bg-hover);
+            }
+
+        }
+
+        svg {
+            height: 1.5rem;
+            width: 1.5rem;
+        }
     }
-    
+
+}
+
 input {
     border: none;
     padding: 0.5rem;

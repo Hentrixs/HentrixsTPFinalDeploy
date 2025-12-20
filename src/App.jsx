@@ -19,7 +19,7 @@ function App() {
         <MessageBoxContextProvider>
           <ContactSidebarContextProvider>
 
-            <div className="app-container">
+            <div className="app-container" data-theme="light">
               <div className="contact-list-container">
 
                 <WhatsAppHeader />
@@ -37,7 +37,7 @@ function App() {
       }>
         <Route index element={<WelcomeScreen />} />
         <Route path="chat/:id" element={
-          <MessageBox />
+          <MessageBox data-theme="light" />
         } />
       </Route>
       <Route path="/status" element={

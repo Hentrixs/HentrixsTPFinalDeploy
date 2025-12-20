@@ -1,10 +1,9 @@
-
 .messagebox-container {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background: url(../../assets/background.jfif);
+    background: var(--chat-bg-image);
     position: absolute;
     top: 0;
 }

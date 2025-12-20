@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    color: white;
+    color: var(--text-primary);
     font-family: "Roboto Variable", "Segoe UI", "Helvetica Neue", Helvetica, "Lucida Grande", Arial;
     margin: 0px;
     box-sizing: border-box;
