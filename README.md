@@ -44,6 +44,7 @@ A partir de la segunda semana del inicio del proyecto, se incorporó el uso de I
 1.  **Automatización de Procesos Repetitivos**: Agilización de tareas redundantes en el maquetado y estructuración inicial de componentes.
 2.  **Refactorización y Optimización**: Limpieza de partes del código que estaban "hardcodeadas", migrando hacia un sistema de diseño basado en variables CSS (`:root`) y patrones de arquitectura más robustos (Services, Context API).
 3.  **Aprendizaje Ad-hoc**: Uso de la IA como mentor personalizado para la resolución de problemas lógicos complejos y la enseñanza de mejores prácticas de React y CSS en tiempo real.
+4.  **Interfaz y Estilos**: Automatización de la paleta de colores para el "Light Mode" mediante IA, facilitando la transición visual, mientras que la lógica técnica del switch de temas fue desarrollada íntegramente por el usuario.
 
 Esta sinergia permitió elevar la calidad técnica del proyecto manteniendo al usuario como el director creativo y arquitecto de la solución.
 
