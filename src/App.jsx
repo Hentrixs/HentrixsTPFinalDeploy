@@ -6,7 +6,7 @@ import './global.css'
 import MessageBox from "./Components/MessageBox/MessageBox"
 import { Outlet, Route, Routes } from "react-router"
 import MessageBoxContextProvider from "./Contexts/MessageBoxContext/MessageBoxContext"
-import ContactSidebarContextProvider from "./Contexts/ContactSidebarContext/ContactSidebarContext.jsx"
+import ContactSidebarContextProvider from "./Contexts/ContactSidebarContext/ContactSidebarContext"
 import Communities from "./Components/Communities/Communities"
 import Status from "./Components/Status/Status"
 import WelcomeScreen from "./Components/WelcomeScreen/WelcomeScreen"
