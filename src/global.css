@@ -51,7 +51,7 @@ body {
     --input-focus: #21c162;
 
     /* Background de Chat */
-    --chat-bg-image: url('/background.jfif');
+    --chat-bg-image: url('../public/background.jfif');
 
     /* Compatibilidad (Legacy) */
     --background-secondary: var(--bg-sidebar);
