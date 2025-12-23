@@ -2,6 +2,22 @@
 
 Este proyecto es una aplicación de chat inspirada en WhatsApp Web/Desktop, desarrollada como trabajo final para la cursada de Front End. Se centra en ofrecer una experiencia de usuario fluida, una arquitectura limpia y un diseño fiel al original.
 
+## 📋 Descripción del Desafío
+
+El desafío consistió en desarrollar una **réplica funcional de WhatsApp Web** que cumpliera con los siguientes requisitos técnicos del TP Final:
+
+- ✅ Aplicación desplegada en Vercel con funcionalidad completa
+- ✅ Código versionado en GitHub con historial de commits
+- ✅ Diseño 100% responsivo (320px - 2000px)
+- ✅ Estilos accesibles con contraste adecuado y modo claro/oscuro
+- ✅ Desarrollo en React con arquitectura de componentes
+- ✅ Gestión de estado mediante Context API
+- ✅ Enrutamiento dinámico con React Router (rutas anidadas y parámetros)
+- ✅ Implementación de formularios funcionales
+- ✅ Múltiples páginas con navegación fluida
+
+El objetivo principal fue **replicar la experiencia de usuario de WhatsApp** manteniendo una arquitectura escalable y código limpio, aplicando los principios de programación vistos en clase (DRY, YAGNI, KISS).
+
 ## 🚀 Funcionalidades Principales
 
 - **Gestión de Contactos**: Lista dinámica de contactos con visualización de últimos mensajes y notificaciones de mensajes no leídos.
