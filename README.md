@@ -27,26 +27,70 @@ El objetivo principal fue **replicar la experiencia de usuario de WhatsApp** man
 - **Pantalla de Bienvenida**: Interfaz de "WhatsApp Desktop" que aparece por defecto cuando no hay un chat seleccionado, gestionada mediante rutas inteligentes.
 - **Diseño Responsivo**: Adaptado para diferentes resoluciones, incluyendo modo escritorio y ajustes para pantallas menores.
 
-## 🛠️ Tecnologías y Herramientas
+## 🛠️ Tecnologías y Librerías Utilizadas
 
 ### Core
-- **React**: Biblioteca principal para la construcción de la interfaz por componentes.
-- **Vite**: Herramienta de construcción y servidor de desarrollo ultra rápido.
+- **React 19.2.0**: Biblioteca principal para la construcción de la interfaz por componentes, utilizando hooks modernos y Context API.
+- **Vite 7.2.4**: Herramienta de construcción y servidor de desarrollo ultra rápido con HMR (Hot Module Replacement).
 
 ### Enrutamiento y Navegación
-- **React Router**: Gestión de rutas anidadas (`Nested Routes`), rutas de índice (`Index Routes`) y contenedores dinámicos (`Outlet`) para un intercambio de componentes profesional.
+- **React Router 7.10.0**: Gestión completa de rutas con:
+  - Rutas anidadas (`Nested Routes`) para layouts compartidos
+  - Rutas de índice (`Index Routes`) para la pantalla de bienvenida
+  - Contenedores dinámicos (`Outlet`) para intercambio de componentes
+  - Parámetros de URL (`/chat/:id`) para navegación dinámica entre conversaciones
 
 ### Gestión de Estado
-- **Context API**: Centralización del estado global de mensajes y filtros de la barra lateral.
-- **Hooks (useState, useRef, useEffect)**: Manejo síncrono y asíncrono del estado, optimización de búsqueda y efectos secundarios.
+- **Context API**: Implementación de tres contextos globales:
+  - `ThemeContext`: Manejo del tema claro/oscuro
+  - `MessageBoxContext`: Estado de mensajes y conversaciones activas
+  - `ContactSidebarContext`: Filtros de búsqueda y categorías de contactos
+- **Hooks Nativos**: `useState`, `useRef`, `useEffect`, `useContext` para manejo de estado local y efectos secundarios
 
 ### Estilos y Diseño
-- **Vanilla CSS**: Estilos personalizados utilizando variables CSS, Flexbox y Media Queries para un control total del diseño.
-- **react-icons**: Biblioteca de íconos para implementar el switch de temas (Sol/Luna) y otros elementos visuales de forma eficiente.
-- **SVG**: Iconografía optimizada y escalable.
+- **Vanilla CSS**: Estilos personalizados con sistema de diseño basado en:
+  - Variables CSS (`:root` y `[data-theme]`) para tematización
+  - Flexbox para layouts responsivos
+  - Media Queries para breakpoints (513px, 1176px)
+  - Paleta de colores oficial de WhatsApp
+- **react-icons 5.5.0**: Biblioteca de íconos para UI (Material Design Icons)
+- **SVG**: Iconografía optimizada y escalable
 
 ### Arquitectura
-- **Service Pattern**: Separación de la lógica de datos (filtrado, búsqueda) en servicios independientes para un código más limpio y escalable.
+- **Service Pattern**: Separación de lógica de negocio en servicios independientes (`src/services/`)
+- **Component-Based Architecture**: Estructura modular con carpetas `Components/`, `Contexts/`, `Layouts/`
+
+## 🚧 Dificultades y Soluciones Implementadas
+
+### 1. **Gestión de Estado Compartido entre Componentes**
+**Problema**: Sincronizar el estado de mensajes entre la lista de contactos y el cuadro de chat sin prop drilling.
+
+**Solución**: Implementación de Context API con `MessageBoxContext` y `ContactSidebarContext`, permitiendo que componentes distantes accedan al estado global sin pasar props manualmente.
+
+### 2. **Enrutamiento Responsivo Desktop/Mobile**
+**Problema**: WhatsApp Web muestra ambas columnas en desktop, pero en mobile debe navegar entre vistas.
+
+**Solución**: Uso de rutas anidadas con `Outlet` y CSS condicional basado en media queries. En desktop, ambos componentes se renderizan simultáneamente; en mobile, React Router maneja la navegación entre vistas.
+
+### 3. **Persistencia Visual del Tema Claro/Oscuro**
+**Problema**: Lógica invertida inicial donde `darkTheme = true` activaba el tema claro.
+
+**Solución**: Refactorización completa renombrando `darkTheme` → `lightTheme` y ajustando la lógica en `ThemeContext`, `MainLayout` y `ContactSearchForm` para mantener coherencia semántica.
+
+### 4. **Filtrado en Tiempo Real de Contactos**
+**Problema**: Renderizado ineficiente al filtrar contactos mientras el usuario escribe.
+
+**Solución**: Implementación de un servicio de búsqueda (`searchcontact`) que filtra datos antes del renderizado, combinado con `useRef` para acceso directo al input sin re-renders innecesarios.
+
+### 5. **Compatibilidad de Rutas en Vercel**
+**Problema**: Errores de case-sensitivity en imports al deployar en Vercel (Linux) vs desarrollo local (Windows).
+
+**Solución**: Normalización de nombres de archivos y corrección de imports para coincidir exactamente con el sistema de archivos (`WhatsAppHeader` vs `WhatsappHeader`).
+
+### 6. **Arquitectura de Contextos Acoplada**
+**Problema**: `ThemeContextProvider` renderizaba directamente `MainLayout`, limitando la reutilización.
+
+**Solución**: Aunque se mantuvo el diseño actual por funcionalidad, se documentó como deuda técnica para futuras refactorizaciones donde el provider renderice `{children}`.
 
 ## 📦 Instalación y Uso
 
