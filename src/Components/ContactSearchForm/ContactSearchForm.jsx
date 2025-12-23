@@ -1,11 +1,15 @@
 import { useContext } from 'react'
 import './ContactSearchForm.css'
 import { ContactSidebarContext } from '../../Contexts/ContactSidebarContext/ContactSidebarContext';
+import { ThemeContext } from '../../Contexts/ThemeContext/ThemeContext';
+import { MdDarkMode, MdLightMode } from "react-icons/md";
 
 export default function ContactSearchForm() {
 
   const { updateFilter, filterState, searchcontact }
     = useContext(ContactSidebarContext);
+
+  const { darkTheme, setDarkTheme } = useContext(ThemeContext);
 
   const handleClick = (id, name_request) => {
     //cambio de estado de botones y carga de contactos
@@ -19,14 +23,24 @@ export default function ContactSearchForm() {
 
   return (
     <div className='contact-search-form'>
-      <form action="#">
-        <span>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
-          </path>
-          </svg>
-        </span>
-        <input type="text" placeholder='Search or start a new chat' onChange={handleChange} />
-      </form>
+      <div className='search-and-theme-container'>
+        <form action="#">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
+            </path>
+            </svg>
+          </span>
+          <input type="text" placeholder='Search or start a new chat' onChange={handleChange} />
+        </form>
+        <button
+          className='theme-toggle-btn'
+          onClick={() => setDarkTheme(!darkTheme)}
+          title={darkTheme ? "Switch to Light Mode" : "Switch to Dark Mode"}
+        >
+          {darkTheme ? <MdLightMode size={20} /> : <MdDarkMode size={20} />}
+        </button>
+      </div>
+
       <div className='contact-buttons'>
         {filterState.map((button) => {
           return (

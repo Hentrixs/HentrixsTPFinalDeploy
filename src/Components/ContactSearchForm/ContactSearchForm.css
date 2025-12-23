@@ -5,14 +5,25 @@
     border-radius: 100px;
     position: sticky;
 
+    /* Nuevo contenedor para buscar + botón tema */
+    .search-and-theme-container {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 0.5rem 0rem;
+        width: 100%;
+    }
+
     form {
         background-color: inherit;
-        margin: 0.5rem 0rem;
+        /* margin: 0.5rem 0rem;  Removed margin to align with container */
         display: flex;
         align-items: center;
         width: auto;
         justify-content: start;
         border-radius: 100px;
+        flex: 1;
+        /* Para que ocupe el resto del espacio */
     }
 
     span {
@@ -29,6 +40,8 @@
         background-color: var(--bg-hover);
         border-radius: 1rem;
         font-weight: 1000;
+        transition: outline 0.2s ease;
+        /* Suave transición al foco */
     }
 
     input:hover {
@@ -39,6 +52,28 @@
         outline: 2px solid var(--input-focus);
     }
 
+    /* Estilos del botón de tema */
+    .theme-toggle-btn {
+        background-color: transparent;
+        border: none;
+        color: var(--text-secondary);
+        cursor: pointer;
+        padding: 0.5rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        flex-shrink: 0;
+        /* Evita que se encoja */
+        width: 40px;
+        height: 40px;
+    }
+
+    .theme-toggle-btn:hover {
+        background-color: var(--bg-hover);
+        color: var(--text-primary);
+    }
 }
 
 .contact-buttons {

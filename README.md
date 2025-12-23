@@ -26,6 +26,7 @@ Este proyecto es una aplicación de chat inspirada en WhatsApp Web/Desktop, desa
 
 ### Estilos y Diseño
 - **Vanilla CSS**: Estilos personalizados utilizando variables CSS, Flexbox y Media Queries para un control total del diseño.
+- **react-icons**: Biblioteca de íconos para implementar el switch de temas (Sol/Luna) y otros elementos visuales de forma eficiente.
 - **SVG**: Iconografía optimizada y escalable.
 
 ### Arquitectura
