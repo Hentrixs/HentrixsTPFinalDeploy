@@ -107,7 +107,7 @@ body {
     height: 100vh;
     height: 100dvh;
     overflow: hidden;
-    background-color: var(--bg-main);
+    background-color: var(--background-secondary);
 }
 
 .contact-list-container {
