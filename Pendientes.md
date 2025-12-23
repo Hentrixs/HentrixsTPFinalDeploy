@@ -1,15 +1,10 @@
 # PRIORIDADES IMPORTANTES
 
-voy a inspirarme en el proyecto de franco para meter lo del cambio de tema oscuro a blanco (edit: solo falta la parte de switchear) 
-
-Copiar el repo de este proyecto a otra carpeta, y en general hacer el deploy como mostro el profe en el video
+-Ninguna, ya las hize todas
 
 # PRIORIDADES SECUNDARIAS
 
 Buscar un favicon mejor (pedirle a IA que lo haga)
-
-Ajustar el tamanio de los objetos (solo me interesa el de los botones
-de filtros en responsive)
 
 Revisar comportamiento del messagebox al meter demasiados mensajes
 al messagebox meterle barra deslizante.
