@@ -9,12 +9,12 @@ import { ThemeContext } from "../Contexts/ThemeContext/ThemeContext";
 
 export default function MainLayout() {
 
-    const { darkTheme } = useContext(ThemeContext);
+    const { lightTheme } = useContext(ThemeContext);
 
     return (
         <MessageBoxContextProvider>
             <ContactSidebarContextProvider>
-                <div className="app-container" data-theme={darkTheme ? "light" : "dark"} >
+                <div className="app-container" data-theme={lightTheme ? "light" : "dark"} >
                     <div className="contact-list-container">
 
                         <WhatsAppHeader />

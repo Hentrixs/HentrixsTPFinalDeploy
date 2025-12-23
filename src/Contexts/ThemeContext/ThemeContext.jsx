@@ -1,13 +1,14 @@
 import { createContext } from "react";
-export const ThemeContext = createContext();
 import { useState } from "react";
 import MainLayout from "../../Layouts/MainLayout";
 
+export const ThemeContext = createContext();
+
 export const ThemeContextProvider = () => {
-    const [darkTheme, setDarkTheme] = useState(true)
+    const [lightTheme, setLightTheme] = useState(true)
 
     return (
-        <ThemeContext.Provider value={{ darkTheme, setDarkTheme }}>
+        <ThemeContext.Provider value={{ lightTheme, setLightTheme }}>
             <MainLayout />
         </ThemeContext.Provider>
     )

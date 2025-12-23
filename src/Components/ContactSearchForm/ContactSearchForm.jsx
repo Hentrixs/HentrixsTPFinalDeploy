@@ -9,7 +9,7 @@ export default function ContactSearchForm() {
   const { updateFilter, filterState, searchcontact }
     = useContext(ContactSidebarContext);
 
-  const { darkTheme, setDarkTheme } = useContext(ThemeContext);
+  const { lightTheme, setLightTheme } = useContext(ThemeContext);
 
   const handleClick = (id, name_request) => {
     //cambio de estado de botones y carga de contactos
@@ -34,10 +34,10 @@ export default function ContactSearchForm() {
         </form>
         <button
           className='theme-toggle-btn'
-          onClick={() => setDarkTheme(!darkTheme)}
-          title={darkTheme ? "Switch to Light Mode" : "Switch to Dark Mode"}
+          onClick={() => setLightTheme(!lightTheme)}
+          title={lightTheme ? "Switch to Dark Mode" : "Switch to Light Mode"}
         >
-          {darkTheme ? <MdLightMode size={20} /> : <MdDarkMode size={20} />}
+          {lightTheme ? <MdLightMode size={20} /> : <MdDarkMode size={20} />}
         </button>
       </div>
 
